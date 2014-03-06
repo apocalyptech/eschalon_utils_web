@@ -1,0 +1,900 @@
+Xolotl - Lvl 20 Male Emayu Druidic Magick User
+
+Profile Picture: Custom
+
+STR: 20    INT: 38     HP: 100/100
+DEX:  9    WIS: 19     MP: 177/177
+END: 14    PCP: 49    EXP: 167660
+SPD:  9    CCN: 14   GOLD: 22305
+HUNGER: 49%    THIRST: 43%
+
+CHARACTER STATUS
+----------------
+
+	* Dense Nimbus (Turns left: 58)  - extra (casting level): 6
+	* Gravedigger's Flame (Turns left: 49)
+
+"PERMANENT" CHARATER STATUS
+---------------------------
+
+	* Encumbered
+	* Silent
+
+SKILLS
+------
+
+	Alchemy: 3
+	Divination: 1
+	Elemental: 27
+	Light Armor: 1
+	Cartography: 5
+	Dodge: 1
+	Foraging: 8
+	Hide in Shadows: 1
+	Lore: 11
+	Meditation: 23
+	Mercantile: 3
+	Move Silently: 1
+	Pick Locks: 1
+	Skullduggery: 1
+	Spot Hidden: 1
+	Unarmed Combat: 1
+	Bludgeoning Weapons: 1
+	Piercing Weapons: 1
+	Swords: 1
+
+AVATAR GRAPHICS FX
+------------------
+
+	* 4294814826
+	* 4294814826
+	* 4294814826
+	* 4294814826
+	* 4294814826
+	* 4294814826
+	* 4294814826
+
+ORIENTATION
+-----------
+
+X: 31  Y: 65
+Facing: NE
+
+SPELL JOURNAL
+-------------
+
+	* EL - Draw Water
+	* EL - Element Armor
+	* EL - Fire Dart
+	* EL - Gravedigger's Flame
+	* EL - Reveal Map
+	* EL - Sonic Blast
+	* EL - Sparkling Wonder
+	* EL - Dense Nimbus
+	* EL - Chameleon
+	* EL - Compress Atmosphere
+	* EL - Toxic Element
+	* EL - Fireball
+	* EL - Lock Melt
+	* EL - Trapkill
+	* EL - Abyssal Freeze
+	* EL - Ice Lance
+	* EL - Invisibility
+	* EL - Portal
+	* EL - Supernova
+
+READIED SPELLS
+--------------
+
+	(current) - Supernova / Level 6
+	1 - Dense Nimbus / Level 6
+	2 - Fire Dart / Level 5
+	3 - Compress Atmosphere / Level 6
+	4 - Compress Atmosphere / Level 5
+	5 - Fireball / Level 6
+	6 - Ice Lance / Level 6
+	7 - Ice Lance / Level 5
+	8 - Lock Melt / Level 6
+	9 - Trapkill / Level 6
+	0 - Gravedigger's Flame / Level 6
+
+BOUND PORTAL LOCATIONS
+----------------------
+
+	Slot 1: 5248 (Port Kuudad) at 9143
+	Slot 2: talushorn_2 (Talushorn, Level 2) at 13316
+	Slot 3: 5060 (Talushorn) at 4823
+	Slot 4: 4547 (Durnore Region) at 10825
+	Slot 5: 4858 (Picaroon Isle) at 7335
+	Slot 6: 4851 (Northern Harpoon Bay) at 18623
+
+ALCHEMY RECIPE BOOK
+-------------------
+
+	* Detox Serum
+	* Invisibility
+	* Mana Potion
+	* Potion of Fortify Mana
+	* Potion of Greater Protection
+	* Potion of Leatherskin
+	* Potion of Stone Skin
+	* Harden Armor
+	* Imbue with Fire
+	* Imbue with Cold
+	* Imbue with Poison
+
+EQUIPPED ITEMS
+--------------
+
+Quiver:
+	(none)
+
+Helm:
+	Grand Hat of the Magus
+	Category: Armor (Helm)
+	Subcategory: Light Armor
+	Picture ID: 73
+	Value: 1500
+	Condition: 91%
+	Base Armor: 1
+	Special (1): +3 Divination
+	Special (2): +3 Elemental
+	Special (3): +5 Perception
+	Weight: 1.5 lbs
+
+Cloak:
+	Zen Cloak
+	Category: Armor (Cloak)
+	Subcategory: Light Armor
+	Picture ID: 16
+	Value: 220
+	Condition: 93%
+	Base Armor: 1
+	Special (1): +2 Meditation
+	Weight: 3.0 lbs
+
+Amulet:
+	Philosopher's Pendant
+	Category: Amulet
+	Picture ID: 50
+	Value: 800
+	Special (1): +3 Wisdom
+	Special (2): +3 Intelligence
+	Weight: 0.1 lbs
+
+Torso:
+	Immune Boiled Leather Armor
+	Category: Armor (Torso)
+	Subcategory: Light Armor
+	Picture ID: 32
+	Value: 880
+	Condition: 79%
+	Base Armor: 5
+	Special (1): +10 Disease Resistance
+	Weight: 5.2 lbs
+
+Primary Weapon:
+	(none)
+
+Belt:
+	Blessed Rope Belt of the Healer
+	Category: Armor (Belt)
+	Subcategory: Light Armor
+	Picture ID: 4
+	Value: 100
+	Condition: 88%
+	Special (1): +2 Medicine
+	Weight: 0.5 lbs
+
+Gauntlet:
+	Trickster's Bracers
+	Category: Armor (Gauntlet)
+	Subcategory: Light Armor
+	Picture ID: 51
+	Value: 50
+	Condition: 94%
+	Base Armor: 1
+	Special (1): +2 Skullduggery
+	Weight: 0.5 lbs
+
+Legs:
+	(none)
+
+Ring 1:
+	Elder's Ring
+	Category: Ring
+	Picture ID: 43
+	Value: 50
+	Special (1): +2 Lore
+	Weight: 0.1 lbs
+
+Ring 2:
+	Elder's Ring
+	Category: Ring
+	Picture ID: 43
+	Value: 50
+	Special (1): +2 Lore
+	Weight: 0.1 lbs
+
+Shield:
+	(none)
+
+Feet:
+	Impervious Boiled Leather Boots
+	Category: Armor (Feet)
+	Subcategory: Light Armor
+	Picture ID: 11
+	Value: 1000
+	Condition: 100%
+	Base Armor: 4
+	Special (1): +15 Toxin Resistance
+	Weight: 3.2 lbs
+
+
+EQUIPMENT SLOT 1
+----------------
+
+	Quiver: EMPTY
+	Helm: Grand Hat of the Magus
+	Cloak: Zen Cloak
+	Amulet: Philosopher's Pendant
+	Torso: Immune Boiled Leather Armor
+	Weapon: EMPTY
+	Belt: Blessed Rope Belt of the Healer
+	Gauntlet: Trickster's Bracers
+	Legs: EMPTY
+	Ring 1: Mystic Ring
+	Ring 2: Mystic Ring
+	Shield: EMPTY
+	Feed: Impervious Boiled Leather Boots
+
+EQUIPMENT SLOT 2
+----------------
+
+	Quiver: EMPTY
+	Helm: Grand Hat of the Magus
+	Cloak: Zen Cloak
+	Amulet: Philosopher's Pendant
+	Torso: Immune Boiled Leather Armor
+	Weapon: EMPTY
+	Belt: Blessed Rope Belt of the Healer
+	Gauntlet: Trickster's Bracers
+	Legs: EMPTY
+	Ring 1: Elder's Ring
+	Ring 2: Elder's Ring
+	Shield: EMPTY
+	Feed: Impervious Boiled Leather Boots
+
+KEYRING
+-------
+
+	* Simple Key
+	* Bluish Key
+	* Rusted Key
+	* Copper Key
+	* Jade Key
+	* Silver Key
+	* Hammerlorne Key
+	* Turquoise Key
+	* Spooky Key
+	* Security Key
+	* Turquoise Key
+	* Advanced Key
+	* Gold Key
+
+INVENTORY
+---------
+
+Row 1, Col 1:
+	Demon Oil III
+	Category: Weapon
+	Subcategory: Thrown Weapons
+	Picture ID: 92
+	Value: 110
+	Base Damage: 12
+	Special (1): +0 Large Effect Area (thrown potions)
+	Special (3): +129 0
+	Weight: 0.4 lbs
+	Item can be stacked (more than one per slot)
+	(3 of this item in slot)
+
+Row 1, Col 2:
+	Steel Arrow
+	Category: Arrow
+	Picture ID: 17
+	Value: 4
+	Base Damage: 2
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+	(8 of this item in slot)
+
+Row 1, Col 3:
+	Mithril Warlord's Belt
+	Category: Armor (Belt)
+	Subcategory: Heavy Armor
+	Picture ID: 6
+	Value: 980
+	Condition: 94%
+	Base Armor: 7
+	Weight: 7.5 lbs
+
+Row 1, Col 4:
+	Mithril Weapon Fragments
+	Category: Miscellaneous
+	Picture ID: 67
+	Value: 50
+	Weight: 0.5 lbs
+	Item can be stacked (more than one per slot)
+
+Row 1, Col 5:
+	Iron Weapon Fragments
+	Category: Miscellaneous
+	Picture ID: 67
+	Value: 5
+	Weight: 0.5 lbs
+	Item can be stacked (more than one per slot)
+
+Row 1, Col 6:
+	Large Emerald
+	Category: Gem
+	Picture ID: 57
+	Value: 225
+	Weight: 0.2 lbs
+	Item can be stacked (more than one per slot)
+
+Row 1, Col 7:
+	Tempered Steel Double Battle Axe
+	Category: Weapon
+	Subcategory: Cleaving Weapons
+	Picture ID: 23
+	Value: 520
+	Condition: 94%
+	Base Damage: 6
+	Weight: 8.4 lbs
+
+Row 1, Col 8:
+	Toughen Thy Skin
+	Category: Recipe
+	Picture ID: 76
+	Value: 20
+	Weight: 0.3 lbs
+	Script: book 49 ; learn_recipe (14) ; learn_recipe (19) 
+	Item can be stacked (more than one per slot)
+
+Row 2, Col 1:
+	Spun Adamantium Skullcap
+	Category: Armor (Helm)
+	Subcategory: Light Armor
+	Picture ID: 20
+	Value: 1700
+	Condition: 50%
+	Base Armor: 7
+	Weight: 1.9 lbs
+
+Row 2, Col 2:
+	Trickster's Bracers
+	Category: Armor (Gauntlet)
+	Subcategory: Light Armor
+	Picture ID: 51
+	Value: 50
+	Condition: 100%
+	Base Armor: 1
+	Special (1): +2 Skullduggery
+	Weight: 0.5 lbs
+
+Row 2, Col 3:
+	The Fly's Defense
+	Category: Book
+	Picture ID: 4
+	Value: 50
+	Weight: 2.0 lbs
+	Script: Book 38 ; learn_skill 8 
+
+Row 2, Col 4:
+	Empty Flask
+	Category: Potion
+	Picture ID: 29
+	Value: 1
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 2, Col 5:
+	Hellrime
+	Category: Weapon
+	Subcategory: Swords
+	Picture ID: 47
+	Value: 5000
+	Condition: 100%
+	Base Damage: 7
+	Base Armor: 2
+	Special (1): +4 Damage
+	Weight: 4.0 lbs
+
+Row 2, Col 6:
+	Bloodlust Ring
+	Category: Ring
+	Picture ID: 36
+	Value: 100
+	Special (1): +1 Damage
+	Weight: 0.1 lbs
+
+Row 2, Col 7:
+	Ancient Dragon Skin Skullcap
+	Category: Armor (Helm)
+	Subcategory: Light Armor
+	Picture ID: 20
+	Value: 2000
+	Condition: 55%
+	Base Armor: 8
+	Weight: 2.0 lbs
+
+Row 2, Col 8:
+	Mighty Ring
+	Category: Ring
+	Picture ID: 37
+	Value: 220
+	Special (1): +3 Strength
+	Weight: 0.1 lbs
+
+Row 3, Col 1:
+	Large Diamond
+	Category: Gem
+	Picture ID: 58
+	Value: 375
+	Weight: 0.2 lbs
+	Item can be stacked (more than one per slot)
+
+Row 3, Col 2:
+	Bar of Mithril
+	Category: Miscellaneous
+	Picture ID: 23
+	Value: 800
+	Weight: 6.0 lbs
+	Item can be stacked (more than one per slot)
+
+Row 3, Col 3:
+	Bar of Gold
+	Category: Miscellaneous
+	Picture ID: 21
+	Value: 500
+	Weight: 10.0 lbs
+	Item can be stacked (more than one per slot)
+
+Row 3, Col 4:
+	(none)
+
+Row 3, Col 5:
+	(none)
+
+Row 3, Col 6:
+	(none)
+
+Row 3, Col 7:
+	(none)
+
+Row 3, Col 8:
+	(none)
+
+Row 4, Col 1:
+	(none)
+
+Row 4, Col 2:
+	(none)
+
+Row 4, Col 3:
+	(none)
+
+Row 4, Col 4:
+	(none)
+
+Row 4, Col 5:
+	(none)
+
+Row 4, Col 6:
+	(none)
+
+Row 4, Col 7:
+	(none)
+
+Row 4, Col 8:
+	(none)
+
+Row 5, Col 1:
+	(none)
+
+Row 5, Col 2:
+	(none)
+
+Row 5, Col 3:
+	(none)
+
+Row 5, Col 4:
+	(none)
+
+Row 5, Col 5:
+	(none)
+
+Row 5, Col 6:
+	(none)
+
+Row 5, Col 7:
+	(none)
+
+Row 5, Col 8:
+	(none)
+
+Row 6, Col 1:
+	(none)
+
+Row 6, Col 2:
+	(none)
+
+Row 6, Col 3:
+	(none)
+
+Row 6, Col 4:
+	(none)
+
+Row 6, Col 5:
+	(none)
+
+Row 6, Col 6:
+	(none)
+
+Row 6, Col 7:
+	(none)
+
+Row 6, Col 8:
+	(none)
+
+Row 7, Col 1:
+	Citizen Writ
+	Category: n/a
+	Picture ID: 69
+	Value: 0
+	Weight: 0.1 lbs
+	Script: msg (This is a Citizen's Writ proclaiming the carrier to be a citizen or worker within the city of Port Kuudad.) 
+	Item can be stacked (more than one per slot)
+
+Row 7, Col 2:
+	Strange Viewing Glass
+	Category: Special
+	Picture ID: 60
+	Value: 0
+	Weight: 0.1 lbs
+	Script: msg (When you hold the Viewing Glass to your eye the world appears prismatic and sparkling.) ; special_event 3 
+
+Row 7, Col 3:
+	Water Skin
+	Category: Consumable (waterskin)
+	Picture ID: 24
+	Value: 15
+	Condition: 100%
+	Weight: 6.0 lbs
+	Script: drink 
+
+Row 7, Col 4:
+	Potion of Haste I
+	Category: Potion
+	Picture ID: 12
+	Value: 30
+	Special (3): +8224 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 14 3 10 ; to_flask 
+	Item can be stacked (more than one per slot)
+	(3 of this item in slot)
+
+Row 7, Col 5:
+	Mana Potion I
+	Category: Potion
+	Picture ID: 3
+	Value: 15
+	Special (3): +1040 0
+	Weight: 0.3 lbs
+	Script: cond_mana ; msg(You feel a surge of power as the potion restores your arcane energies.) ; Restore 15 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask 
+	Item can be stacked (more than one per slot)
+
+Row 7, Col 6:
+	Plasma Wand
+	Category: Wand
+	Picture ID: 90
+	Value: 0
+	Condition: 100%
+	Weight: 5.0 lbs
+
+Row 7, Col 7:
+	(none)
+
+Row 7, Col 8:
+	(none)
+
+Row 8, Col 1:
+	Map of Eschalon
+	Category: Miscellaneous
+	Picture ID: 52
+	Value: 10
+	Weight: 0.1 lbs
+	Script: display map_eschalon.png 
+
+Row 8, Col 2:
+	Map of Mistfell
+	Category: Miscellaneous
+	Picture ID: 52
+	Value: 5
+	Weight: 0.1 lbs
+	Script: display map_mistfell.png 
+
+Row 8, Col 3:
+	Map of Amireth
+	Category: Miscellaneous
+	Picture ID: 52
+	Value: 7
+	Weight: 0.1 lbs
+	Script: display map_amireth.png 
+
+Row 8, Col 4:
+	Lutescent Bell
+	Category: Miscellaneous
+	Picture ID: 93
+	Value: 0
+	Weight: 0.3 lbs
+
+Row 8, Col 5:
+	Cerulescent Bell
+	Category: Miscellaneous
+	Picture ID: 92
+	Value: 0
+	Weight: 0.3 lbs
+
+Row 8, Col 6:
+	Crux of Fire
+	Category: Special
+	Picture ID: 94
+	Value: 0
+	Weight: 2.0 lbs
+
+Row 8, Col 7:
+	(none)
+
+Row 8, Col 8:
+	Steak
+	Category: Consumable (food)
+	Picture ID: 17
+	Value: 20
+	Weight: 1.0 lbs
+	Script: Eat 800 0 ; remove ; msg (Ah, a quality cut of meat! Nothing fills the stomach like a good steak.) ; sound (eat) 
+	Item can be stacked (more than one per slot)
+	(5 of this item in slot)
+
+Row 9, Col 1:
+	Strange Note
+	Category: Special
+	Picture ID: 63
+	Value: 0
+	Weight: 0.1 lbs
+	Script: note 3 
+	Item can be stacked (more than one per slot)
+
+Row 9, Col 2:
+	Scribbled Parchment
+	Category: n/a
+	Picture ID: 42
+	Value: 0
+	Weight: 0.1 lbs
+	Script: note 4 
+	Item can be stacked (more than one per slot)
+
+Row 9, Col 3:
+	Your Journal
+	Category: Book
+	Picture ID: 3
+	Value: 0
+	Weight: 0.5 lbs
+	Script: Book 15 
+
+Row 9, Col 4:
+	Rubescent Bell
+	Category: Miscellaneous
+	Picture ID: 90
+	Value: 0
+	Weight: 0.3 lbs
+
+Row 9, Col 5:
+	Virescent Bell
+	Category: Miscellaneous
+	Picture ID: 91
+	Value: 0
+	Weight: 0.3 lbs
+
+Row 9, Col 6:
+	Potion of Predator Sight
+	Category: Potion
+	Picture ID: 10
+	Value: 70
+	Special (3): +2176 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 24 3 40 ; to_flask 
+	Item can be stacked (more than one per slot)
+
+Row 9, Col 7:
+	(none)
+
+Row 9, Col 8:
+	Dried Meat
+	Category: Consumable (food)
+	Picture ID: 13
+	Value: 15
+	Weight: 0.2 lbs
+	Script: Eat 550 0 ; remove ; msg (Tough and chewy but a good way to ease your hunger.) ; sound (eat) 
+	Item can be stacked (more than one per slot)
+	(4 of this item in slot)
+
+Row 10, Col 1:
+	Brewmaster's Ring
+	Category: Ring
+	Picture ID: 32
+	Value: 80
+	Special (1): +2 Alchemy
+	Weight: 0.1 lbs
+
+Row 10, Col 2:
+	Brewmaster's Ring
+	Category: Ring
+	Picture ID: 32
+	Value: 80
+	Special (1): +2 Alchemy
+	Weight: 0.1 lbs
+
+Row 10, Col 3:
+	Mystic Ring
+	Category: Ring
+	Picture ID: 34
+	Value: 80
+	Special (1): +2 Elemental
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+
+Row 10, Col 4:
+	Mystic Ring
+	Category: Ring
+	Picture ID: 34
+	Value: 80
+	Special (1): +2 Elemental
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+
+Row 10, Col 5:
+	Warlock's Hat
+	Category: Armor (Helm)
+	Subcategory: Light Armor
+	Picture ID: 73
+	Value: 850
+	Condition: 87%
+	Base Armor: 1
+	Special (1): +3 Intelligence
+	Special (2): +3 Wisdom
+	Special (3): +3 Perception
+	Weight: 1.5 lbs
+
+Row 10, Col 6:
+	Dealer Hat
+	Category: Armor (Helm)
+	Picture ID: 26
+	Value: 100
+	Special (1): +2 Mercantile
+	Weight: 2.0 lbs
+
+Row 10, Col 7:
+	(none)
+
+Row 10, Col 8:
+	Gold: 22305
+	Torches: 4
+	Current torch used for 0 turns
+
+READY ITEMS
+-----------
+
+Ready Item 1:
+	Healing Elixir III
+	Category: Potion
+	Picture ID: 2
+	Value: 100
+	Special (3): +258 0
+	Weight: 0.3 lbs
+	Script: cond_health ; msg(You feel the elixir course through your veins.) ; Heal 90 0 ; Sound(SFX_quaff) ; Sound(SFX_Heal) ; to_flask 
+	Item can be stacked (more than one per slot)
+	(12 of this item in slot)
+
+Ready Item 2:
+	(none)
+
+Ready Item 3:
+	Detox Serum
+	Category: Potion
+	Picture ID: 7
+	Value: 50
+	Special (3): +72 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; cure_poison 4 ; to_flask 
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Ready Item 4:
+	Potion of Haste II
+	Category: Potion
+	Picture ID: 13
+	Value: 60
+	Special (3): +8224 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 14 3 20 ; to_flask 
+	Item can be stacked (more than one per slot)
+
+Ready Item 5:
+	Potion of Ogre Strength
+	Category: Potion
+	Picture ID: 17
+	Value: 100
+	Special (3): +16392 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 15 3 120 ; to_flask 
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Ready Item 6:
+	Mana Potion III
+	Category: Potion
+	Picture ID: 5
+	Value: 100
+	Special (3): +1040 0
+	Weight: 0.3 lbs
+	Script: cond_mana ; msg(You feel a surge of power as the potion restores your arcane energies.) ; Restore 90 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask 
+	Item can be stacked (more than one per slot)
+	(9 of this item in slot)
+
+Ready Item 7:
+	Cat's Eyes Brew
+	Category: Potion
+	Picture ID: 27
+	Value: 15
+	Special (3): +5 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 11 3 120 ; to_flask 
+	Item can be stacked (more than one per slot)
+	(3 of this item in slot)
+
+Ready Item 8:
+	Elixir of Cure Ailment
+	Category: Potion
+	Picture ID: 24
+	Value: 40
+	Special (3): +33024 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; cure_ailment ; to_flask 
+	Item can be stacked (more than one per slot)
+	(3 of this item in slot)
+
+Ready Item 9:
+	Potion of Greater Protection
+	Category: Potion
+	Picture ID: 11
+	Value: 150
+	Special (3): +49152 0
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; player_effect 26 3 40 ; to_flask 
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Ready Item 10:
+	Demon Oil I
+	Category: Weapon
+	Subcategory: Thrown Weapons
+	Picture ID: 90
+	Value: 20
+	Base Damage: 5
+	Special (1): +0 Small Effect Area (thrown potions)
+	Special (3): +129 0
+	Weight: 0.2 lbs
+	Item can be stacked (more than one per slot)
+

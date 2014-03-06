@@ -1,0 +1,280 @@
+Note that this is probably out-of-date and incorrect in at least
+a few spots, though it should be mostly correct.  The best source
+of this data is just the code itself, in the read() function of
+character.py.
+
+Savegame "char" file
+
+& = four-byte value, most-significant-byte first
+    (ie: 21807 == 0x552F == 2F 55 00 00)
+% = Float, eight bytes
+$ = String, terminated by CRLF (0D 0A)
+
+Origins:
+    Nor'lander
+    Barrean
+    Rifter
+    Therish
+    Kessian
+
+Axioms:
+    Atheistic
+    Druidic
+    Virtuous
+    Nefarious
+    Agnostic
+
+Classes:
+    Fighter
+    Rogue
+    Magick User
+    Healer
+    Ranger
+
+& (the number zero?)
+$ Character name
+$ (empty string?)
+$ Origin
+$ Axiom
+$ Class
+& (the number 1?)
+& Strength
+& Dexterity
+& Endurance
+& Speed
+& Intelligence
+& Wisdom
+& Perception
+& Concentration
+& One & each for skill levels, in this order:
+ -  Alchemy
+ -  Arcane, Divination
+ -  Arcane, Elemental
+ -  Armor, Light
+ -  Armor, Heavy
+ -  Armor, Shields
+ -  Cartography
+ -  Dodge
+ -  Hide in Shadows
+ -  Lore
+ -  Meditation
+ -  Mercantile
+ -  Move Silently
+ -  Pick Logs
+ -  Skullduggery
+ -  Spot Hidden
+ -  Survival
+ -  Unarmed Combat
+ -  Weapon, Bludgeaning
+ -  Weapon, Bows
+ -  Weapon, Cleaving
+ -  Weapon, Short Bladed
+ -  Weapon, Swords
+ -  Weapon, Thrown
+& Max Hit Points
+& Max Mana Points
+& Current Hit Points
+& Current Mana Points
+& Experience
+& Level
+& Gold
+
+Seventy-one & values, mostly zeros
+   1: ?
+   2: ?
+   3: Turns left Stunned
+   4: ?
+   5: Turns left Air Shielded
+   6: ?
+   7: Poisoned
+   8: ?
+   9: Turns left Enchanted Wea
+   10: ?
+   11: Turns left Entangled
+   12: ?
+   13: Turns left Cat's Eyes
+   14: ?
+   15: Turns left Gravedigger's Flame
+   16: ?
+   17: Turns left Bless
+   18: ? ("2" on mine)
+   19: Turns left Haste
+   20: ?
+   21: Turns left Ogre Strength
+   22: ?
+   23: Turns left Invisible
+   24: ?
+   25: Turns left Leatherskin
+   26: ? ("2" on mine)
+   27: Turns left Nimbleness
+   28: ?
+   29: Turns left Charmed
+   30: ?
+   31: Turns left Reveal Map
+   32: ?
+   33: Turns left Stoneskin
+   34: ?
+   35: Turns left Keensight
+   36: ?
+   37: Turns left Paralyzed
+   38: ?
+   39: Turns left Scared
+   40: ?
+   41: Turns left Enkindled Weapon
+   42: ?
+   43: Turns left Elemental Armor
+   44: ?
+   45: Turns left Chameleon
+   46: ?
+   47: Turns left Predator Sight
+   48: ?
+   49: Turns left Off-Balance
+   50: ?
+   51: Turns left Mana Fortified
+   52: ?
+   53: Turns left Greater Protection
+   54: ?
+   55: ?
+   56: ?
+   57: ?
+   58: ?
+   59: ?
+   60: ?
+   61: ?
+   62: ?
+   63: ?
+   64: ?
+   65: ?
+   66: ?
+   67: ?
+   68: ?
+   69: ?
+   70: ?
+   71: ?
+
+This pattern, six times:
+    $ (empty string?)
+    $ (empty string?)
+    & (zero?  Last is 34 (which is my torch count!)
+& (unknown)
+& (unknown)
+One & each, boolean for spells-in-spell-journal:
+ - Bless
+ - Cat's Eyes
+ - Detox
+ - Divine Heal
+ - Entangle
+ - Fleshboil
+ - Leatherskin
+ - Lore
+ - Poison Spray
+ - Nimbleness
+ - Ogre Strength
+ - Charm
+ - Cure Disease
+ - Enchanted Weapon
+ - Haste
+ - Sunder Flesh
+ - Stoneskin
+ - Turn Undead
+ - Mass Boil
+ - Smite
+ - Dehex
+ - Dancing Lights
+ - Air Shield
+ - Fire Dart
+ - Gravedigger's Flame
+ - Element Armor
+ - Reveal Map
+ - Predator Sight
+ - Sonic Blast
+ - Compress Atmosphere
+ - Enkindled Weapon
+ - Deep Freeze
+ - Fireball
+ - Chameleon
+ - Lock Melt
+The ten readied spells:
+   $ Spell Name
+   & Casting Level
+& orientation
+& xpos
+& ypos
+Bunch of unknown, apparently lasts 116 bytes (29 & values?  kind of odd though)
+$ (empty string?)
+$ (empty string?)
+& (zero?)
+& (zero?)
+Start of Inventory Items, starts from top left and "reads" like a book:
+    & Item Type
+        0x00 - (nothing)
+        0x01 - Short Bladed Weapons
+        0x07 - Light Armor
+        0x0B - Amulet
+        0x0C - Ring
+        0x0F - Potion
+        0x10 - Reagent
+        0x12 - Miscellaneous
+        0x13 - Lock Pick
+        0x18 - n/a
+        0x19 - Special
+        0x1A - Key
+    $ Item Name
+    % Item Weight
+    & (zero - four in case of my D2 item, 22 for stinger, 18 for inc. fuel)
+    & (unknown, usually 1)
+    & Picture ID
+    & Value
+    & (unknown, usually 0, 1)
+    & Quantity in Slot (zero if they can't be (or aren't) stacked, presumably)
+    & Base Damage
+    & Base Armor Rating
+    & 
+    & 
+    & Skill modified
+    & ^ Points modified by
+    & Increase to Hitpoints
+    & Increase to Mana
+    & Increase to ToHit
+    & Increase to damage
+    & Increase to armor rating
+    & 20% increase flag:
+        0x01 - Resist Elements
+        0x02 - Resist Toxins
+        0x03 - Resist Magick
+        0x04 - Resist Disease
+    & (unknown - flags?  0x03000000 == Poisoned)
+    $ "Use" scripting
+    $ (empty string?)
+    & (unknown (always zero))
+    & (unknown (always zero)) - lantern length...
+There's a blank item in place for the "gold" slot
+Then equipment:
+ - Quiver
+ - Helm
+ - Cloak
+ - Amulet
+ - Torso
+ - Primary Weapon
+ - Belt
+ - Gauntlet
+ - Legs
+ - Ring 1
+ - Ring 2
+ - Shield
+ - Feet
+ - Alternate Weapon
+Then, for some reason, seven blank items
+One & boolean for each of the last spells:
+ - Trapkill
+ - Portal
+ - Invisibility
+ - Supernova
+
+Seemingly "special" items:
+  Lantern
+  Category: Armor (Shield)
+  pid: 178
+  Value: 35
+  Weight: 5.0 lbs
+  Duration: 500

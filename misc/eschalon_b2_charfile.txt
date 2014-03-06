@@ -1,0 +1,961 @@
+Savegame "char" file
+
+# = one-byte value (char/int/whatever)
+@ = two-byte short
+& = four-byte value, most-significant-byte first
+    (ie: 21807 == 0x552F == 2F 55 00 00)
+^ = Float, four bytes
+% = Double, eight bytes
+$ = String, terminated by CRLF (0D 0A)
+
+Origins:
+    Nor'lander
+    Barrean
+    Emayu
+    Therish
+    Kessian
+
+Axioms:
+    Atheistic
+    Druidic
+    Virtuous
+    Nefarious
+    Agnostic
+
+Classes:
+    Fighter
+    Rogue
+    Magick User
+    Healer
+    Ranger
+
+Male Atheistic Fighter = Mercenary
+Male Atheistic Rogue = Bard
+Male Atheistic Magick User = Illusionist
+Male Atheistic Healer = Sawbones
+Male Atheistic Ranger = Naturalist
+
+Male Druidic Fighter = Preserver
+Male Druidic Rogue = Shadowlark
+Male Druidic Magick User = Conjuror
+Male Druidic Healer = True Druid
+Male Druidic Ranger = Guardian
+
+Male Virtuous Fighter = Paladin
+Male Virtuous Rogue = Rebel
+Male Virtuous Magick User = Mage
+Male Virtuous Healer = Cleric
+Male Virtuous Ranger = Shepard
+
+Male Nefarious Fighter = Berserker
+Male Nefarious Rogue = Assassin
+Male Nefarious Magick User = Warlock
+Male Nefarious Healer = Necromancer
+Male Nefarious Ranger = Blighter
+
+Male Agnostic Fighter = Barbarian
+Male Agnostic Rogue = Thief
+Male Agnostic Magick User = Mystic
+Male Agnostic Healer = Theurgist
+Male Agnostic Ranger = Vanquisher
+
+Female Atheistic Fighter = Valkyrie
+Female Atheistic Rogue = Bohemian
+Female Atheistic Magick User = Illusionist
+Female Atheistic Healer = Pythoness
+Female Atheistic Ranger = Naturalist
+
+Female Druidic Fighter = Nightshade
+Female Druidic Rogue = Satyress
+Female Druidic Magick User = Conjuress
+Female Druidic Healer = Wiccan
+Female Druidic Ranger = Dryad
+
+Female Virtuous Fighter = Lioness
+Female Virtuous Rogue = Rebel
+Female Virtuous Magick User = Enchantress
+Female Virtuous Healer = Cleric
+Female Virtuous Ranger = Warden
+
+Female Nefarious Fighter = Banshee
+Female Nefarious Rogue = Backbiter
+Female Nefarious Magick User = Sorceress
+Female Nefarious Healer = Witch
+Female Nefarious Ranger = Siren
+
+Female Agnostic Fighter = Amazon
+Female Agnostic Rogue = Burglar
+Female Agnostic Magick User = Mystic
+Female Agnostic Healer = Sibyl
+Female Agnostic Ranger = Huntress
+
+FILE BEGINS:
+
+# (the number zero?)
+$ Character name
+
+# Gender (1 = male, 2 = female)
+# Origin (3 = Emayu, etc)
+# Axiom (2 = Druidic, 3 = Virtuous)
+# Class (3 = Magick User, 4 = Healer)
+# (unknown, seems to crash the game if it's wrong.  Maybe savefile version?)
+  "5" on this 1.03 savegame, and "1" on some 1.02 savegames...
+
+# Strength
+# Dexterity
+# Endurance
+# Speed
+# Intelligence
+# Wisdom
+# Perception
+# Concentration
+
+# Alchemy
+# Arcane, Divination
+# Arcane, Elemental
+# Armor, Light
+# Armor, Heavy
+# Armor, Shields
+# Cartography
+# Dodge
+# Foraging
+# Hide in Shadows
+# Lore
+# Medicine
+# Meditation
+# Mercantile
+# Move Silently
+# Pick Locks
+# Repair
+# Skullduggery
+# Spot Hidden
+# Unarmed Combat
+# Weapon, Bludgeoning
+# Weapon, Bows
+# Weapon, Cleaving
+# Weapon, Piercing
+# Weapon, Swords
+# Weapon, Thrown
+
+# Skill points left-over
+# Attribute points left-over
+
+& Cur HP
+& Cur MP
+& Max HP
+& Max MP
+& Current XP
+& Level
+& Hunger, out of 1000
+& Thirst, out of 1000
+
+seven &, all "6B AC FD FF" (graphic effects, it seems - basic is FF FF FF FF,
+    torch is FC FF FF FF, 6B AC FD FF is gravedigger's flame...)
+
+Effects, alternates with what's usually the spellcasting level used:
+
+& Chameleon
+&
+& Protection from Curses
+&
+& Entangled
+&
+& Paralyzed
+&
+& Poisoned (turns seems to function differently)
+&
+& Scared
+&
+& Stunned
+&
+& Off-Balance
+&
+& Dense Nimbus
+&
+& Enchanted Weapon
+&
+& Cat's Eyes
+&
+& Gravedigger's Flame
+&
+& Blessed
+&
+& Haste
+&
+& Ogre Strength
+&
+& Invisible
+&
+& Leatherskin
+&
+& Nimbleness
+&
+& Reveal Map
+&
+& Stoneskin
+&
+& Keensight
+&
+& Enkindled Weapon
+&
+& Elemental Armor
+&
+& Predator Sight
+&
+& Mana Fortified
+&
+& Greater Protection
+&
+
+Portal Locations, six blocks of these:
+   & Coordinate
+   $ Map Name
+   $ English Map Name
+
+# (unknown, zero)
+
+Elemental Spells:
+
+# Draw Water
+# Element Armor
+# Fire Dart
+# Gravedigger's Flame
+# Predator Sight
+# Reveal Map
+# Sonic Blast
+# Sparkling Wonder
+# Dense Nimbus
+# Chameleon
+# Compress Atmosphere
+# Enkindled Weapon
+# Toxic Element
+# Fireball
+# Lock Melt
+# Milo's Cell of Holding
+# Trapkill
+# Abyssal Freeze
+# Ice Lance
+# Invisibility
+# Portal
+# Supernova
+
+Divination Spells:
+
+# Bless
+# Cat's Eyes
+# Create Food
+# Detox
+# Divine Heal
+# Entangle
+# Fleshboil
+# Leatherskin
+# Lore
+# Charm
+# Cure Ailments
+# Enchanted Weapon
+# Haste
+# Nimbleness
+# Ogre Strength
+# Protection From Curses
+# Stoneskin
+# Sunder Flesh
+# Turn Undead
+# Dehex
+# Mystic Hammer
+# Mass Boil
+# Summon Beast
+
+$ Readied Spell name
+# Readied Spell Level
+
+One for each quickspell slot (10 total):
+  $ Spell Name
+  # Spell Level
+
+Alchemy Recpies (0 or 1):
+
+& Cat's Eyes Brew
+& Detox Serum
+& Demon Oil
+& Elixir of Cure Ailment
+& Flask of Charm Cloud
+& Flask of Toxic Aura
+& Healing Elixir
+& Invisibility
+& Mana Potion
+& Potion of Fortify Mana
+& Potion of Greater Protection
+& Potion of Haste
+& Potion of Keensight
+& Potion of Leatherskin
+& Potion of Nimbleness
+& Potion of Ogre Strength
+& Potion of Predator Sight
+& Potion of Restoration
+& Potion of Stone Skin
+& Imbue ToHit
+& Imbue Damage
+& Harden Armor
+& Imbue with Fire
+& Imbue with Cold
+& Imbue with Poison
+
+Fourteen &, all zero
+
+# Facing Direction (2 == NE)
+& X pos of character
+& Y pos of character
+five #, unknown, weird
+& (unknown - 240) (new char: 8)
+& (unknown - 120) (new char: 10)
+& (unknown - 60)  (new char: 20)
+# (unknown - 1) (same for new char)
+& huge-ass bitfield ("permanent" statuses)
+  0x00000001 - (unknown)
+  0x00000002 - Broken Left Arm
+  0x00000004 - Broken Right Arm
+  0x00000008 - Concussion
+  0x00000010 - (unknown)
+  0x00000020 - (unknown)
+  0x00000040 - Cursed
+  0x00000080 - Insane
+  0x00000100 - Tapeworms
+  0x00000200 - Troll Fever
+  0x00000400 - Eye Rot
+  0x00000800 - Fleshblight
+  0x00001000 - (unknown)
+  0x00002000 - (unknown)
+  0x00004000 - (unknown)
+  0x00008000 - (unknown)
+  0x00010000 - Encumbered
+  0x00020000 - Overburdened
+  0x00040000 - Hidden in Shadow
+  0x00080000 - Silent
+  0x00100000 - Devastating Blow
+  0x00200000 - Great Cleave
+  0x00400000 - Fury Strike
+  0x00800000 - Intense Focus
+  0x01000000 - Masterful Riposte
+  0x02000000 - Overwhelming Volley
+  0x04000000 - Double Strike
+  0x08000000 - (unknown)
+  0x10000000 - (unknown)
+  0x20000000 - (unknown)
+  0x40000000 - (unknown)
+  0x80000000 - (unknown)
+& Picture ID (FF FF FF FF for custom) (1-6 is male, 7-12 is female)
+& Gold
+& Number of torches
+& Number of turns current torch has used (will expire at 300)
+twenty $ - keyring (so I guess max 20 keys?  blank strings afterwards)
+@ (unknown - 0)
+$ (unknown - blank)
+twenty-nine #, unknown, all zero
+$ (unknown - blank)
+$ (unknown - blank)
+@ (unknown - 0)
+
+Begin Inventory row, starts top left and "reads" like a book (80 total):
+  @ Item Type
+    0x01 - Weapon
+    0x02 - Arrow
+    0x03 - Armor (Helm)
+    0x06 - Armor (Belt)
+    0x07 - Armor (Gauntlet)
+    0x10 - Book
+    0x13 - Miscellaneous
+    0x15 - Gem
+  $ Item Name
+  ^ Weight
+  # Subtype (which skill is used - for weapons and armor mostly)
+    Thrown Weapons - 26, Light Armor - 4, Heavy Armor - 5, Cleaving Weapons - 23, etc
+  @ Item Max HP
+  @ Item Current HP
+  # (unknown)
+    Demon oil III, I, Steel Arrow, Fragments, Trickster's Bracers, Grand Hat, Bar of Mithril - 0
+    Mithril Warlord's Belt - 2
+    Axe - 2
+    Impervious Boots - 3
+  # Ease of Identification (Bar of Mithril was set to 9, resets to 1 once it's known)
+  @ Picture ID (might be just #?)
+  @ Full Value (reported value in GUI seems to take into account condition)
+  # Can-Stack flag
+  @ Quantity In Stack
+  # Base Damage
+  # Base Armor
+  # Attr. Modified 1 (Demon Oil III is set to "55" (I: 53)- perhaps that's an ID for "Thrown Weapons?")
+      note that 1-8 are your character attributes, 9 through 0x23 are skills, and then:
+      0x24 ToHit
+      0x25 Damage
+      0x26 Armor Rating
+      0x27 Damage Reduction
+      0x28 Elemental Resistance
+      0x29 Toxin Resistance
+      0x2A Magick Resistance
+      0x2B Disease Resistance
+      0x2C All Resistance
+      0x2D Hit Points
+      0x2E Mana Points
+      0x2F Hunger
+      0x30 Thirst
+      0x31 Fire Damage
+      0x32 Freeze Damage
+      0x33 Magick Damage
+      0x34 Poison
+  # Attr. Modifier 1
+  # Attr. Modified 2
+  # Attr. Modifier 2
+  # Attr. Modified 3
+
+  & Attr. Modifier 3 (Demon Oil III+I are set to "129" - that's, um, weird)
+    (for some reason this is 4-bit)
+  This can also be seen as four # vals, though that's not entirely accurate.
+  The final three bytes *can* act as data, but seem to also be bitfields
+  for potions and thrown-potions...  Unlike other data, this is signed, too,
+  and if the highest bit on the last byte is 1, then the third attribute
+  will be negative.  Rather odd.
+
+  $ "use" scripting
+  $ unknown - empty string?
+  @ unknown - zero
+
+Then equipment:
+ - Quiver
+ - Helm
+ - Cloak
+ - Amulet
+ - Torso
+ - Primary Weapon
+ - Belt
+ - Gauntlet
+ - Legs
+ - Ring 1
+ - Ring 2
+ - Shield
+ - Feet
+
+Then "ready" slots, 5x2
+
+Then 2x13 $, alternating between the titles for Equip Slots 1 and 2
+   (so first Quiver Slot 1, then Quiver Slot 2, then Helm Slot 1, etc)
+
+-----------
+
+Actual loading code in the app:
+
+            # Start processing
+            self.unknown.initzero = self.df.readuchar()
+
+            # Character info
+            self.name = self.df.readstr()
+            self.gender = self.df.readuchar()
+            self.origin = self.df.readuchar()
+            self.axiom = self.df.readuchar()
+            self.classname = self.df.readuchar()
+            self.unknown.version = self.df.readuchar()
+            if self.unknown.version == 1:
+                raise LoadException('This savegame was probably saved in v1.02 of Book 2, only 1.03 and higher is supported')
+            self.strength = self.df.readuchar()
+            self.dexterity = self.df.readuchar()
+            self.endurance = self.df.readuchar()
+            self.speed = self.df.readuchar()
+            self.intelligence = self.df.readuchar()
+            self.wisdom = self.df.readuchar()
+            self.perception = self.df.readuchar()
+            self.concentration = self.df.readuchar()
+
+            # Skills
+            for key in sorted(c.skilltable.keys()):
+                self.addskill(key, self.df.readuchar())
+
+            # More stats
+            self.extra_att_points = self.df.readuchar()
+            self.extra_skill_points = self.df.readuchar()
+            self.curhp = self.df.readint()
+            self.curmana = self.df.readint()
+            self.maxhp = self.df.readint()
+            self.maxmana = self.df.readint()
+            self.experience = self.df.readint()
+            self.level = self.df.readint()
+            self.hunger = self.df.readint()
+            self.thirst = self.df.readint()
+
+            # FX block
+            for i in range(7):
+                self.fxblock.append(self.df.readint())
+
+            # Non-permanent Chracter Statuses (will expire automatically)
+            for i in range(26):
+                self.statuses.append(self.df.readint())
+                self.statuses_extra.append(self.df.readint())
+
+            # Portal anchor locations
+            for i in range(6):
+                portal_anchor = []
+                portal_anchor.append(self.df.readint())
+                portal_anchor.append(self.df.readstr())
+                portal_anchor.append(self.df.readstr())
+                self.portal_locs.append(portal_anchor)
+
+            # Unknown
+            self.unknown.zero1 = self.df.readuchar()
+
+            # Spells
+            for i in range(len(c.spelltable)):
+                self.addspell()
+
+            # Currently-readied spell
+            self.readied_spell = self.df.readstr()
+            self.readied_spell_lvl = self.df.readuchar()
+
+            # Readied Spells
+            for i in range(10):
+                self.addreadyslot(self.df.readstr(), self.df.readuchar())
+
+            # Alchemy Recipes
+            for i in range(25):
+                self.addalchemy()
+
+            # Some unknown values (zeroes so far)
+            for i in range(14):
+                self.unknown.fourteenzeros.append(self.df.readint())
+
+            # Position/orientation
+            self.orientation = self.df.readuchar()
+            self.xpos = self.df.readint()
+            self.ypos = self.df.readint()
+
+            # Some unknowns
+            for i in range(5):
+                self.unknown.strangeblock.append(self.df.readuchar())
+            self.unknown.unknowni1 = self.df.readint()
+            self.unknown.unknowni2 = self.df.readint()
+            self.unknown.unknowni3 = self.df.readint()
+            self.unknown.usually_one = self.df.readuchar()
+
+            # Permanent Statuses (bitfield)
+            self.permstatuses = self.df.readint()
+
+            # More stats
+            self.picid = self.df.readint()
+            self.gold = self.df.readint()
+            self.torches = self.df.readint()
+            self.torchused = self.df.readint()
+
+            # Keyring
+            for i in range(20):
+                self.keyring.append(self.df.readstr())
+
+            # More unknowns
+            self.unknown.unknowns1 = self.df.readshort()
+            self.unknown.unknownstr1 = self.df.readstr()
+            for i in range(29):
+                self.unknown.twentyninezeros.append(self.df.readuchar())
+            self.unknown.unknownstr2 = self.df.readstr()
+            self.unknown.unknownstr3 = self.df.readstr()
+            self.unknown.unknowns2 = self.df.readshort()
+
+            # Inventory
+            for i in range(self.inv_rows * self.inv_cols):
+                self.additem()
+
+            # Equipped
+            self.quiver.read(self.df);
+            self.helm.read(self.df);
+            self.cloak.read(self.df);
+            self.amulet.read(self.df);
+            self.torso.read(self.df);
+            self.weap_prim.read(self.df);
+            self.belt.read(self.df);
+            self.gauntlet.read(self.df);
+            self.legs.read(self.df);
+            self.ring1.read(self.df);
+            self.ring2.read(self.df);
+            self.shield.read(self.df);
+            self.feet.read(self.df);
+
+            # Readied items
+            for i in range(10):
+                self.readyitems[i].read(self.df)
+
+            # Equipment Slots
+            for i in range(13):
+                self.equip_slot_1.append(self.df.readstr())
+                self.equip_slot_2.append(self.df.readstr())
+
+            # If there's extra data at the end, we likely don't have
+            # a valid char file
+            self.unknown.extradata = self.df.read()
+            if (len(self.unknown.extradata)>0):
+                raise LoadException('Extra data at end of file')
+
+... aand the code that loads in items:
+
+
+        self.type = df.readuchar()
+        self.unknownflag = df.readuchar()
+        self.item_name = df.readstr()
+        self.weight = df.readfloat()
+        self.subtype = df.readuchar()
+        self.max_hp = df.readshort()
+        self.cur_hp = df.readshort()
+        self.unknownc1 = df.readuchar()
+        self.visibility = df.readuchar()
+        self.pictureid = df.readshort()
+        self.value = df.readshort()
+        self.canstack = df.readuchar()
+        self.quantity = df.readshort()
+        self.basedamage = df.readuchar()
+        self.basearmor = df.readuchar()
+        self.attr_modified_1 = df.readuchar()
+        self.attr_modifier_1 = df.readuchar()
+        self.attr_modified_2 = df.readuchar()
+        self.attr_modifier_2 = df.readuchar()
+        self.attr_modified_3 = df.readuchar()
+        self.attr_modifier_3 = df.readsint()
+        self.script = df.readstr()
+        self.emptystr = df.readstr()
+        self.zero1 = df.readshort()
+
+... aand some relevant lookup tables:
+
+    attrtable = {
+            0x01: 'Strength',
+            0x02: 'Dexterity',
+            0x03: 'Endurance',
+            0x04: 'Speed',
+            0x05: 'Intelligence',
+            0x06: 'Wisdom',
+            0x07: 'Perception',
+            0x08: 'Concentration'
+        }
+
+    dirtable = {
+            1: 'N',
+            2: 'NE',
+            3: 'E',
+            4: 'SE',
+            5: 'S',
+            6: 'SW',
+            7: 'W',
+            8: 'NW'
+        }
+
+    skilltable = {
+            0x01: 'Alchemy',
+            0x02: 'Divination',
+            0x03: 'Elemental',
+            0x04: 'Light Armor',
+            0x05: 'Heavy Armor',
+            0x06: 'Shields',
+            0x07: 'Cartography',
+            0x08: 'Dodge',
+            0x09: 'Foraging',
+            0x0A: 'Hide in Shadows',
+            0x0B: 'Lore',
+            0x0C: 'Medicine',
+            0x0D: 'Meditation',
+            0x0E: 'Mercantile',
+            0x0F: 'Move Silently',
+            0x10: 'Pick Locks',
+            0x11: 'Repair',
+            0x12: 'Skullduggery',
+            0x13: 'Spot Hidden',
+            0x14: 'Unarmed Combat',
+            0x15: 'Bludgeoning Weapons',
+            0x16: 'Bows',
+            0x17: 'Cleaving Weapons',
+            0x18: 'Piercing Weapons',
+            0x19: 'Swords',
+            0x1A: 'Thrown Weapons'
+        }
+
+    typetable = {
+            0x00: '(none)',
+            0x01: 'Weapon',
+            0x02: 'Arrow',
+            0x03: 'Armor (Helm)',
+            0x04: 'Armor (Cloak)',
+            0x05: 'Armor (Torso)',
+            0x06: 'Armor (Belt)',
+            0x07: 'Armor (Gauntlet)',
+            0x08: 'Armor (Legs)',
+            0x09: 'Armor (Shield)',
+            0x0A: 'Armor (Feet)',
+            0x0B: 'Amulet',
+            0x0C: 'Ring',
+            0x0D: 'Wand',
+            0x0E: 'Spell',
+            0x0F: 'Potion',
+            0x10: 'Recipe',
+            0x11: 'Reagent',
+            0x12: 'Book',
+            0x13: 'Miscellaneous',
+            0x14: 'Lockpick',
+            0x15: 'Gem',
+            0x16: 'Torch',
+            0x17: 'Consumable (food)',
+            0x18: 'Consumable (waterskin)',
+            0x19: 'Gold',
+            0x1A: 'n/a',
+            0x1B: 'Special',
+            0x1C: 'Key',
+            0x1D: 'Explosive'
+            # Not sure if there's anything beyond here...
+        }
+
+    spelltable = {
+            0: 'Draw Water',
+            1: 'Element Armor',
+            2: 'Fire Dart',
+            3: 'Gravedigger\'s Flame',
+            4: 'Predator Sight',
+            5: 'Reveal Map',
+            6: 'Sonic Blast',
+            7: 'Sparkling Wonder',
+            8: 'Dense Nimbus',
+            9: 'Chameleon',
+            10: 'Compress Atmosphere',
+            11: 'Enkindled Weapon',
+            12: 'Toxic Element',
+            13: 'Fireball',
+            14: 'Lock Melt',
+            15: 'Milo\'s Cell of Holding',
+            16: 'Trapkill',
+            17: 'Abyssal Freeze',
+            18: 'Ice Lance',
+            19: 'Invisibility',
+            20: 'Portal',
+            21: 'Supernova',
+            22: 'Bless',
+            23: 'Cat\'s Eyes',
+            24: 'Create Food',
+            25: 'Detox',
+            26: 'Divine Heal',
+            27: 'Entangle',
+            28: 'Fleshboil',
+            29: 'Leatherskin',
+            30: 'Lore',
+            31: 'Charm',
+            32: 'Cure Ailments',
+            33: 'Enchanted Weapon',
+            34: 'Haste',
+            35: 'Nimbleness',
+            36: 'Ogre Strength',
+            37: 'Protection From Curses',
+            38: 'Stoneskin',
+            39: 'Sunder Flesh',
+            40: 'Turn Undead',
+            41: 'Dehex',
+            42: 'Mystic Hammer',
+            43: 'Mass Boil',
+            44: 'Summon Beast'
+        }
+
+    # Should maybe just have a Spell class for this instead
+    spelltype = {}
+    for spell in spelltable.keys():
+        if (spell < 22):
+            spelltype[spell] = 'EL'
+        else:
+            spelltype[spell] = 'DI'
+    
+    statustable = {
+            0: 'Chameleon',
+            1: 'Protection from Curses',
+            2: 'Entangled',
+            3: 'Paralyzed',
+            4: 'Poisoned',
+            5: 'Scared',
+            6: 'Stunned',
+            7: 'Off-Balance',
+            8: 'Dense Nimbus',
+            9: 'Enchanted Weapon',
+            10: 'Cat\'s Eyes',
+            11: 'Gravedigger\'s Flame',
+            12: 'Blessed',
+            13: 'Haste',
+            14: 'Ogre Strength',
+            15: 'Invisible',
+            16: 'Leatherskin',
+            17: 'Nimbleness',
+            18: 'Reveal Map',
+            19: 'Stoneskin',
+            20: 'Keensight',
+            21: 'Enkindled Weapon',
+            22: 'Elemental Armor',
+            23: 'Predator Sight',
+            24: 'Mana Fortified',
+            25: 'Greater Protection',
+        }
+
+    # Rather a lot of duplicated information in here, but it turns
+    # out there's a "Polearm Weapons" in the middle of the table which isn't
+    # present elsewhere, so it'd be harder to just populate from the existing
+    # tables.  So whatever.
+    itemeffecttable = {
+            0x01: 'Strength',
+            0x02: 'Dexterity',
+            0x03: 'Endurance',
+            0x04: 'Speed',
+            0x05: 'Intelligence',
+            0x06: 'Wisdom',
+            0x07: 'Perception',
+            0x08: 'Concentration',
+            0x09: 'Alchemy',
+            0x0A: 'Divination',
+            0x0B: 'Elemental',
+            0x0C: 'Light Armor',
+            0x0D: 'Heavy Armor',
+            0x0E: 'Shields',
+            0x0F: 'Cartography',
+            0x10: 'Dodge',
+            0x11: 'Foraging',
+            0x12: 'Hide in Shadows',
+            0x13: 'Lore',
+            0x14: 'Meditation',
+            0x15: 'Mercantile',
+            0x16: 'Move Silently',
+            0x17: 'Pick Locks',
+            0x18: 'Repair',
+            0x19: 'Skullduggery',
+            0x1A: 'Spot Hidden',
+            0x1B: 'Medicine',
+            0x1C: 'Unarmed Combat',
+            0x1D: 'Bludgeoning Weapons',
+            0x1E: 'Bows',
+            0x1F: 'Cleaving Weapons',
+            0x20: 'Piercing Weapons',
+            0x21: '(Polearm Weapons)',
+            0x22: 'Swords',
+            0x23: 'Thrown Weapons',
+            0x24: 'ToHit',
+            0x25: 'Damage',
+            0x26: 'Armor Rating',
+            0x27: 'Damage Reduction',
+            0x28: 'Elemental Resistance',
+            0x29: 'Toxin Resistance',
+            0x2A: 'Magick Resistance',
+            0x2B: 'Disease Resistance',
+            0x2C: 'All Resistance',
+            0x2D: 'Hit Points',
+            0x2E: 'Mana Points',
+            0x2F: 'Hunger',
+            0x30: 'Thirst',
+            0x31: 'Fire Damage',
+            0x32: 'Freeze Damage',
+            0x33: 'Magick Damage',
+            0x34: 'Poison',
+            0x35: 'Small Effect Area (thrown potions)',
+            0x36: 'Medium Effect Area (thrown potions)',
+            0x37: 'Large Effect Area (thrown potions)'
+        }
+
+    # This table is a bitfield lookup
+    permstatustable = {
+            0x00000001: '(unknown 1)',
+            0x00000002: 'Broken Left Arm',
+            0x00000004: 'Broken Right Arm',
+            0x00000008: 'Concussion',
+            0x00000010: 'Starving',
+            0x00000020: 'Dehydrated',
+            0x00000040: 'Cursed',
+            0x00000080: 'Insane',
+            0x00000100: 'Tapeworms',
+            0x00000200: 'Troll Fever',
+            0x00000400: 'Eye Rot',
+            0x00000800: 'Fleshblight',
+            0x00001000: 'Unskilled Weapon Penalty',
+            0x00002000: 'Unskilled Armor Penalty (light)',
+            0x00004000: 'Unskilled Armor Penalty (heavy)',
+            0x00008000: 'Unskilled Shield Penalty',
+            0x00010000: 'Encumbered',
+            0x00020000: 'Overburdened',
+            0x00040000: 'Hidden in Shadow',
+            0x00080000: 'Silent',
+            0x00100000: 'Devastating Blow',
+            0x00200000: 'Great Cleave',
+            0x00400000: 'Fury Strike',
+            0x00800000: 'Intense Focus',
+            0x01000000: 'Masterful Riposte',
+            0x02000000: 'Overwhelming Volley',
+            0x04000000: 'Double Strike',
+            0x08000000: '(unknown 8)',
+            0x10000000: '(unknown 9)',
+            0x20000000: '(unknown 10)',
+            0x40000000: '(unknown 11)',
+            0x80000000: '(unknown 12)'
+        }
+
+    alchemytable = {
+            0: 'Cat\'s Eyes Brew',
+            1: 'Detox Serum',
+            2: 'Demon Oil',
+            3: 'Elixir of Cure Ailment',
+            4: 'Flask of Charm Cloud',
+            5: 'Flask of Toxic Aura',
+            6: 'Healing Elixir',
+            7: 'Invisibility',
+            8: 'Mana Potion',
+            9: 'Potion of Fortify Mana',
+            10: 'Potion of Greater Protection',
+            11: 'Potion of Haste',
+            12: 'Potion of Keensight',
+            13: 'Potion of Leatherskin',
+            14: 'Potion of Nimbleness',
+            15: 'Potion of Ogre Strength',
+            16: 'Potion of Predator Sight',
+            17: 'Potion of Restoration',
+            18: 'Potion of Stone Skin',
+            19: 'Imbue ToHit',
+            20: 'Imbue Damage',
+            21: 'Harden Armor',
+            22: 'Imbue with Fire',
+            23: 'Imbue with Cold',
+            24: 'Imbue with Poison'
+        }
+
+    gendertable = {
+            1: 'Male',
+            2: 'Female'
+        }
+
+    origintable = {
+            1: 'Nor\'lander',
+            2: 'Barrean',
+            3: 'Emayu',
+            4: 'Therish',
+            5: 'Kessian'
+        }
+
+    axiomtable = {
+            1: 'Atheistic',
+            2: 'Druidic',
+            3: 'Virtuous',
+            4: 'Nefarious',
+            5: 'Agnostic'
+        }
+
+    classtable = {
+            1: 'Fighter',
+            2: 'Rogue',
+            3: 'Magick User',
+            4: 'Healer',
+            5: 'Ranger'
+        }
+
+    picidtable = {
+            1: 'Male #1',
+            2: 'Male #2',
+            3: 'Male #3',
+            4: 'Male #4',
+            5: 'Male #5',
+            6: 'Male #6',
+            7: 'Female #1',
+            8: 'Female #2',
+            9: 'Female #3',
+            10: 'Female #4',
+            11: 'Female #5',
+            12: 'Female #6',
+            0xFFFFFFFF: 'Custom'
+        }

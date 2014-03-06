@@ -1,0 +1,358 @@
+add_gold <n>
+    Adds the specified amount of gold directly to the player's inventory
+
+drop_gold <n>
+    Drops a bag with the specified quantity of gold
+
+remove_gold <n>
+    Removes the specified amount of gold from the player's inventory
+
+drop_item (<Item Name>) <percent chance>
+    Drops the named item with the specified percent chance.  Percentage
+    *might* be optional?  Set 100 to have it always happend
+
+quest <questnum> <state>
+    Set the specified quest to the specified state.  State can be given as a
+    negative number with parens, like "(-2)", which will apparently move the
+    quest "back" a bit.  (That's used, for example, when you abandon quests,
+    or at least the Keebo/sword quest.)  Occasionally the -2 is NOT in
+    parens, though.  The start of a quest seems to be at state "1", and 
+    when a quest is finished, it seems to be state "9" typically.
+    Quests enumerated in quests.txt in the data/ dir.
+    TODO: is it possible to use unnamed quests (arbitrary
+    numbers) as counters, of sorts?
+
+open_port <coords>
+    Open the portcullis at the given coordinates
+
+close_port <coords>
+    Closes the given portcullis
+
+toggle_port <coords>
+    Toggle the given portcullis
+
+toggle_obj <coords>
+    Toggle the existance of a given wall - This will work for basically
+    any graphic.
+
+toggle_switch
+    Toggle this switch's position
+
+toggle_zapper <coords>
+    Toggles a zapper (electric field at the given coords
+
+special_event <num>
+    Triggers the given special event
+        1 - Darus gets killed
+        2 - Darus death script (replace with container'd body)
+        3 - Activates Viewing Glass effect
+        4 - Your bed (rest until 8:00am)
+        5 - ?
+        6 - Harpen turns into a dire wolf
+        7 - Open entrance to Thieves' Arcadia
+        8 - Denied access to Crius Vindica
+        9 - Granted access to Crius Vindica
+        10 - Drink Sparkling Divinity
+        11 - Take the Crux of Fire from its pedestal
+        12 - Player kicked out of the guild, main quest uncompletable
+        13 - ?
+        14 - Snow Wolves invade Durnore
+        15 - Mortikus Death (disease trap)
+        16 - Four bells placed in Lockston Archives
+        17 - Westwillow quest done, all enemies on map disappear
+        18 - Something about "Harpy Cages" - probably unused
+        19 - Trigger endgame
+        20 - Trap in Cape Sorrow (paralyzed plus Cursed Undead spawn)
+        21 - Killed Korren at endgame (Saboteur ending)
+
+kill_quest <questnum>
+    Mark the quest as uncompletable (quest must be currently active)
+
+drop_loot <lootlevel>
+    Drops loot at the given level.  0 == cheap, 10 = great.  11
+    seems to always be Ectoplasm and gold, which is what Dwarven
+    Spirits drop
+
+gfx (<gfx effect>) <coords> <colornum>
+    Coords are usually "0" when used in an entity death script
+    "0" coords seems to describe "the current square"
+    Valid effects:
+        Colored Smoke
+            0 - white
+            1 - green
+            2 - yellow/orange
+            3 - blue
+            4 - grey
+            5 - black
+            6 - white again
+            7 - pink
+        Divine Light - 2, other numbers don't seem to have an effect
+        Gibs
+            0 - white
+            1 - red
+            2 - green
+            3 - black 
+        Flare Burst
+            0 - (invalid)
+            1 - red
+            2 - Green
+            3 - Purplish-White
+            4 - white
+        Port - 0, no discernable change on other numbers
+        Sparkles - 5, 1
+            0 - Invalid
+            1 - Red
+            2 - Green
+            3 - Purple
+            4 - White
+            5 - Green and Purple
+            6 - White and Purple
+            7 - Multicolored
+        Sparks
+        Flare
+        Becon
+
+drop_ent <entnum> <coords>
+    Drops the given entity at the given coordinates
+
+msg (<message text>)
+    Displays the given text in the message pane
+
+quest_step <questnum>
+    Increments the quest step by one
+
+activate_qt <quicktravel num>
+    Activates the given quicktravel (ie: clicked on the anchor point)
+
+book <booknum>
+    Shows book text (just the text, I don't believe it'll actually teach you
+    skills, etc)
+
+learn_recipe <recipenum>
+    Player learns the given alchemy recipe.  Occasionally the recipenum will
+    have parens.  recipenum of "99" will give the user all recipes
+
+learn_skill <skillnum>
+    Teaches the player the given skill (used in books generally).  Doesn't
+    seem to work terribly well outside of books (will say that you've learned
+    the skill but doesn't actually confer the points)
+
+learn_spell
+    Teaches the player the appropriate spell - Item needs to be named "Scroll
+    of <n>" or whatever.  Will crash Eschalon if the item isn't set up
+    correctly
+
+destroy_script
+    Destroys this script (one-time use)
+
+commit_crime
+    Area NPCs may notice you committing a crime
+
+cond_item (<itemname>)
+    Script will terminate unless you have the named item
+
+cond_not_item (<itemname>)
+    Script will terminate if you DO have the named item
+
+cond_quest <questnum> <state>
+    Script will only continue if the specified quest is at the specified
+    state
+
+cond_not_quest <questnum> <state>
+    Script will only continue if the given quest is NOT at the specified
+    state
+
+cond_special <num>
+    Special condition, will only continue if some internal criteria is met
+    Seen in the game:
+        1 - Bronze puzzle (in Ruel's House)
+        2 - Chest puzzle in Port Kuudad Sewers is solved correctly
+        3 - Has all four bells in inventory
+        4 - Switch puzzle in Talushorn Level 3 (releases Dragonels if failed)
+
+cond_spot
+    Script will only continue if the player passes a Spot Hidden check
+
+cond_touch
+    Script will continue if the script was triggered through a player click
+
+cond_health
+    Script will only continue if the user isn't at full health (used in
+    healing elixirs)
+
+cond_mana
+    Script will only continue if the user isn't at full mana (used in mana
+    potions)
+
+cond_gold <n>
+    Script will only continue if the user has at least 'n' gold.
+
+condition (<text>) (<yes text>) (<no text>)
+    Script will only continue if the user hits "Yes."  The last two arguments
+    are usually Yes and No, but it seems they can be just about anything.
+
+sound (<soundname>)
+    Note that the engine will change the pitch somewhat
+    Valid sounds:
+        war_horn
+        mag_door
+        sfx_weapon_eqp_swd
+        f_laughter
+        lava_step
+        sfx_energize
+        spirit_awaken
+        stairs
+        ghorr
+        sfx_port_up
+        2_swallow
+        eat
+        SFX_quaff
+        SFX_Restore
+        SFX_Quaff
+        sfx_positive
+        energy
+
+asfx (<soundname>) <coords>
+    Remote sound effects, apparently.  Seen here:
+        stone_slide
+    ... though the other sfx will work just fine
+
+narrative <narrativenum>
+    Displays the given narrative (plot, generally)
+
+move_player <coords>
+    Send the player to the given coordinates, within this map.
+
+portfx
+    Generate some portal FX (used in Hammerlorne mine entrance)
+    Sort of an analogue of "sound (sfx_portal) ; gfx (Port) 0 0"
+    except that it's centered on the player, so you don't need to
+    specify the actual coordinates.  (and also the "sound" command
+    will change pitch)
+
+port_to <coords>
+    Send the player to the given coordinates, within this map, with
+    some portal effects.  Analagous to "move_player <coords> ; portfx"
+
+map_port (<mapname>) <coords>
+    Send the player to the given coordantes inside 'mapname'
+    Sometimes the parens around mapname are omitted; would be best to always
+    use them, though.  When they're omitted, it seems to always be a
+    'numbered' (outside) map.  The <coords> is omitted once in a script,
+    followed by a move_player instead; should track that down.
+
+convert_tile <coords> <typenum>
+    Converts the given tile to the given object type.  Typically this is
+    "0 1", to make hidden cave treasure clickable, after a cond_spot.
+    Note that you can technically change to any type, but make sure that
+    a valid object is in place already for the type you're switching to.
+    The ONLY thing that this changes is the Object Type itself.
+
+give_item (<itemname>)
+    Place the named item in the player's inventory
+
+remove_item (<itemname>)
+    Remove the named item from the player's inventory.  You may want to
+    call a cond_item first, to be safe.
+
+gain_xp <xp>
+    Give the specified XP.  Can include parens around the XP
+
+visit_well
+    Quenches your thirst and fills your waterskins.  Note that if you have
+    an object of type 16 (well), you don't need this script.
+
+areacheck
+    Unknown; is called often immediately after a map_port, but not always
+
+display (<graphicfile>)
+    Displays the given graphic file (used primarily for roadsigns)
+
+unlocked_with (<keyname>)
+    Used on doors and containers, specifying the key to use
+
+eat <foodval> <drinkval>
+    Used on edible food items
+
+remove
+    Removes the used item from inventory
+
+heal <hp> <hidden>
+    Heal the given amount of HP; if "hidden" is greater than
+    zero, no message will be shown in the message pane, and
+    the graphical flourishes will be supressed
+
+restore <mp>
+    Restores the given amount of MP
+
+to_flask
+    Used on potions to turn the potion into an empty flask
+
+drink
+    Used on waterskins
+
+cure_ailment
+    Cures ailments.
+
+cure_poison <val>
+    Cures poison, seen value "4"
+
+player_effect <effectnum> <levelnum> <duraitionnum>
+    Used in potions to grant various effects.  Ones that I've seen:
+        Cat's Eyes Brew: 11 3 120
+        Haste I: 14 3 10
+        Haste II: 14 3 20
+        Haste III: 14 3 20
+        Ogre Strength: 14 3 120
+        Invisibility I: 16 1 10
+        Invisibility II: 16 3 20
+        Invisibility III: 16 6 30
+        Keensight: 21 3 120
+        Predator Sight: 24 3 40
+        Greater Protection: 26 3 40
+        Leatherskin: 17 3 60
+        Nimbleness: 18 3 120
+        Stoneskin: 20 3 60
+        Fortify Mana: 25 3 20
+    So yeah, effectnum is from c.statustable + 1
+
+time
+    Display the in-game time (used in chronometers)
+
+Probably only valid in engine dialogs:
+
+npc_die <num>
+    Causes the NPC to die
+
+init_trade (<name>)
+    Initializes a trade session with the named merchant
+
+teach_skill (<name>) (<skill_enum>)
+    Used on NPC Trainers; "name" is the name of the trainer, and
+    skill_enum is the full enum-name of the skill.  For example:
+       teach_skill (Becka) (SKILL_ALCHEMY)
+        
+screen_fade_out
+    Does what you'd expect; used for trips to Picaroon Isle and back
+
+screen_fade_in
+    Does what you'd expect
+
+rent_room <cost> <coords>
+    Initiates an "inn" encounter, for the given cost.  You'll wake up at the
+    given coordinates.
+
+cleric_heal
+    Receive healing from a priest/cleric (possibly handles gold
+    automatically?)
+
+cleric_dehex
+    Receive a dehex from a priest/cleric (possibly handles gold
+    automatically?)
+
+npc_disp_change (<name>) <friendlynum>
+    Used primarily when NPCs become angry at you.  Not sure if it'd work
+    outside of the NPC scripts.  friendlynum == 2 for them attacking
+
+weather_report
+    Generates a weather report

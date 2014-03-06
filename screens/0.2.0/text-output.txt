@@ -1,0 +1,600 @@
+Simon - Lvl 9 Therish Druidic Magick User
+Profile Picture 1
+
+STR: 16    INT: 18
+DEX: 15    WIS: 16
+END: 12    PCP: 17
+SPD: 12    CCN: 22
+
+HP: 45/45   Mana: 96/91
+EXP: 20527
+
+CHARACTER STATUS
+----------------
+
+
+AVATAR GRAPHICS FX
+------------------
+
+Ordinary FX (no modifiers)
+
+ORIENTATION
+-----------
+
+X: 48  Y: 107
+Facing: SW
+
+SKILLS
+------
+
+	Alchemy: 1
+	Divination: 5
+	Elemental: 8
+	Light Armor: 4
+	Cartography: 3
+	Mercantile: 4
+	Pick Locks: 3
+	Spot Hidden: 3
+	Survival: 1
+	Cleaving Weapons: 1
+	Swords: 4
+
+SPELL JOURNAL
+-------------
+
+	* DI - Bless
+	* DI - Divine Heal
+	* DI - Entangle
+	* DI - Leatherskin
+	* DI - Lore
+	* DI - Nimbleness
+	* EL - Dancing Lights
+	* EL - Air Shield
+	* EL - Fire Dart
+	* EL - Gravedigger's Flame
+	* EL - Element Armor
+	* EL - Sonic Blast
+	* EL - Deep Freeze
+	* EL - Lock Melt
+	* EL - Trapkill
+
+READIED SPELLS
+--------------
+
+	1 - Fire Dart / Level 4
+	2 - Fire Dart / Level 3
+	3 - Fire Dart / Level 2
+	4 - Fire Dart / Level 1
+	5 - Sonic Blast / Level 4
+	6 - Air Shield / Level 4
+	7 - Leatherskin / Level 2
+	8 - Bless / Level 2
+	9 - Entangle / Level 2
+	0 - Gravedigger's Flame / Level 4
+
+EQUIPPED ITEMS
+--------------
+
+Quiver:
+	(none)
+
+Helm:
+	Thinking Cap
+	Category: Armor (Helm)
+	Subcategory: Light Armor
+	Picture ID: 61
+	Value: 420
+	Base Armor: 1
+	Attribute Modifier: +2 Intelligence
+	Weight: 1.0 lbs
+
+Cloak:
+	Light Cloak
+	Category: Armor (Cloak)
+	Subcategory: Light Armor
+	Picture ID: 52
+	Value: 5
+	Weight: 1.0 lbs
+
+Amulet:
+	Amulet of Accuracy
+	Category: Amulet
+	Picture ID: 172
+	Value: 100
+	Special: +3 ToHit
+	Weight: 0.1 lbs
+
+Torso:
+	Studded Leather Hauberk +2
+	Category: Armor (Torso)
+	Subcategory: Light Armor
+	Picture ID: 83
+	Value: 385
+	Base Armor: 3
+	Special: +2 Armor
+	Weight: 3.0 lbs
+
+Primary Weapon:
+	Steel Falcata
+	Category: Weapon
+	Subcategory: Swords
+	Picture ID: 43
+	Value: 300
+	Base Damage: 4
+	Weight: 3.5 lbs
+
+Belt:
+	Leather Belt
+	Category: Armor (Belt)
+	Subcategory: Light Armor
+	Picture ID: 58
+	Value: 10
+	Base Armor: 1
+	Weight: 1.0 lbs
+
+Gauntlet:
+	Steel Bracers +1
+	Category: Armor (Gauntlet)
+	Subcategory: Light Armor
+	Picture ID: 75
+	Value: 550
+	Base Armor: 3
+	Special: +1 Armor
+	Weight: 1.5 lbs
+
+Legs:
+	Leather Leggings +1
+	Category: Armor (Legs)
+	Subcategory: Light Armor
+	Picture ID: 54
+	Value: 140
+	Base Armor: 1
+	Special: +1 Armor
+	Weight: 4.0 lbs
+
+Ring 1:
+	Ring of the Hawk
+	Category: Ring
+	Picture ID: 163
+	Value: 500
+	Skill Modifier: +3 Spot Hidden
+	Weight: 0.1 lbs
+
+Ring 2:
+	Ring of Sparks
+	Category: Ring
+	Picture ID: 113
+	Value: 80
+	Special: +5 Mana Points
+	Weight: 0.1 lbs
+
+Shield:
+	(none)
+
+Feet:
+	Scout's Sandals
+	Category: Armor (Feet)
+	Subcategory: Light Armor
+	Picture ID: 95
+	Value: 200
+	Base Armor: 1
+	Skill Modifier: +2 Cartography
+	Weight: 1.0 lbs
+
+Alternate Weapon:
+	Steel Battle Axe
+	Category: Weapon
+	Subcategory: Cleaving Weapons
+	Picture ID: 33
+	Value: 300
+	Base Damage: 4
+	Weight: 3.0 lbs
+
+INVENTORY
+---------
+
+Row 1, Col 1:
+	2nd Sealed Note
+	Category: n/a
+	Picture ID: 196
+	Value: 0
+	Weight: 0.1 lbs
+	Script: Sound(SFX_Stats_Open) ; book 14
+
+Row 1, Col 2:
+	Map of Thaermore
+	Category: Miscellaneous
+	Picture ID: 185
+	Value: 5
+	Weight: 0.1 lbs
+	Script: sound(SFX_Stats_Open) ; message(You are viewing a map. Press any key to continue...) ; display (regmap1.png)
+
+Row 1, Col 3:
+	Bent Key
+	Category: Key
+	Picture ID: 225
+	Value: 0
+	Weight: 0.1 lbs
+
+Row 1, Col 4:
+	Rusted Key
+	Category: Key
+	Picture ID: 225
+	Value: 0
+	Weight: 0.1 lbs
+
+Row 1, Col 5:
+	Blue Goblin Key
+	Category: Key
+	Picture ID: 226
+	Value: 0
+	Weight: 0.1 lbs
+
+Row 1, Col 6:
+	Odd Key
+	Category: Key
+	Picture ID: 222
+	Value: 0
+	Weight: 0.1 lbs
+
+Row 1, Col 7:
+	(none)
+
+Row 2, Col 1:
+	Burley Acorn
+	Category: Special
+	Picture ID: 235
+	Value: 10
+	Weight: 0.1 lbs
+
+Row 2, Col 2:
+	Apple
+	Category: Consumable
+	Picture ID: 203
+	Value: 1
+	Weight: 0.1 lbs
+	Script: Message(*Gulp*  Delicious!) ; Remove ; Sound(Eat) ; restore 2
+
+Row 2, Col 3:
+	Lock Pick
+	Category: Lock Pick
+	Picture ID: 126
+	Value: 15
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+	(3 of this item in slot)
+
+Row 2, Col 4:
+	(none)
+
+Row 2, Col 5:
+	(none)
+
+Row 2, Col 6:
+	(none)
+
+Row 2, Col 7:
+	(none)
+
+Row 3, Col 1:
+	Amulet Passkey 26
+	Category: Amulet
+	Picture ID: 108
+	Value: 0
+	Weight: 0.1 lbs
+
+Row 3, Col 2:
+	(none)
+
+Row 3, Col 3:
+	(none)
+
+Row 3, Col 4:
+	(none)
+
+Row 3, Col 5:
+	(none)
+
+Row 3, Col 6:
+	(none)
+
+Row 3, Col 7:
+	(none)
+
+Row 4, Col 1:
+	(none)
+
+Row 4, Col 2:
+	(none)
+
+Row 4, Col 3:
+	(none)
+
+Row 4, Col 4:
+	(none)
+
+Row 4, Col 5:
+	(none)
+
+Row 4, Col 6:
+	(none)
+
+Row 4, Col 7:
+	(none)
+
+Row 5, Col 1:
+	(none)
+
+Row 5, Col 2:
+	(none)
+
+Row 5, Col 3:
+	(none)
+
+Row 5, Col 4:
+	(none)
+
+Row 5, Col 5:
+	(none)
+
+Row 5, Col 6:
+	(none)
+
+Row 5, Col 7:
+	(none)
+
+Row 6, Col 1:
+	Brewmaster's Ring
+	Category: Ring
+	Picture ID: 153
+	Value: 650
+	Skill Modifier: +3 Alchemy
+	Weight: 0.1 lbs
+
+Row 6, Col 2:
+	Ring of Vigor
+	Category: Ring
+	Picture ID: 112
+	Value: 95
+	Special: +5 Hit Points
+	Weight: 0.1 lbs
+
+Row 6, Col 3:
+	Bitter Naga Amulet
+	Category: Amulet
+	Picture ID: 127
+	Value: 180
+	Special: Resist Toxins +20%
+	Weight: 0.1 lbs
+
+Row 6, Col 4:
+	(none)
+
+Row 6, Col 5:
+	(none)
+
+Row 6, Col 6:
+	(none)
+
+Row 6, Col 7:
+	(none)
+
+Row 7, Col 1:
+	Wolves' Tooth Amulet
+	Category: Amulet
+	Picture ID: 106
+	Value: 180
+	Skill Modifier: +3 Cleaving Weapons
+	Weight: 0.1 lbs
+
+Row 7, Col 2:
+	Burglar's Leather Gloves
+	Category: Armor (Gauntlet)
+	Subcategory: Light Armor
+	Picture ID: 70
+	Value: 250
+	Base Armor: 1
+	Skill Modifier: +3 Pick Locks
+	Weight: 0.2 lbs
+
+Row 7, Col 3:
+	Hive Queen Stinger
+	Category: Weapon
+	Subcategory: Short Bladed Weapons
+	Picture ID: 212
+	Value: 0
+	Base Damage: 2
+	Special: Poisoned
+	Weight: 1.0 lbs
+
+Row 7, Col 4:
+	(none)
+
+Row 7, Col 5:
+	(none)
+
+Row 7, Col 6:
+	(none)
+
+Row 7, Col 7:
+	(none)
+
+Row 8, Col 1:
+	Healing Elixir II
+	Category: Potion
+	Picture ID: 144
+	Value: 45
+	Weight: 0.3 lbs
+	Script: cond_health ; Message(You feel the elixir course through your veins.) ; Heal 40 0 ; Sound(SFX_quaff) ; Sound(SFX_Heal) ; to_flask
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 8, Col 2:
+	Healing Elixir I
+	Category: Potion
+	Picture ID: 134
+	Value: 15
+	Weight: 0.3 lbs
+	Script: cond_health ; Message(You feel the elixir course through your veins.) ; Heal 15 0 ; Sound(SFX_quaff) ; Sound(SFX_Heal) ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 8, Col 3:
+	Mana Potion II
+	Category: Potion
+	Picture ID: 146
+	Value: 45
+	Weight: 0.3 lbs
+	Script: cond_mana ; Message(You feel a surge of power as the potion restores your arcane energies.) ; Restore 40 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 8, Col 4:
+	Mana Potion I
+	Category: Potion
+	Picture ID: 136
+	Value: 15
+	Weight: 0.3 lbs
+	Script: cond_mana ; Message(You feel a surge of power as the potion restores your arcane energies.) ; Restore 15 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 8, Col 5:
+	(none)
+
+Row 8, Col 6:
+	(none)
+
+Row 8, Col 7:
+	(none)
+
+Row 9, Col 1:
+	Potion of Cure Lesser Disease
+	Category: Potion
+	Picture ID: 238
+	Value: 110
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; cure_disease 3 ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 9, Col 2:
+	Leatherskin I
+	Category: Potion
+	Picture ID: 138
+	Value: 20
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; effect (Leatherskin) 2 ; to_flask
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 9, Col 3:
+	Potion of Absolute Restoration
+	Category: Potion
+	Picture ID: 182
+	Value: 300
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; message(The elixir is bitter and causes you to choke!) ; poison 200 ; cond_quest 18 1 ; kill_quest 18 ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 9, Col 4:
+	(none)
+
+Row 9, Col 5:
+	(none)
+
+Row 9, Col 6:
+	(none)
+
+Row 9, Col 7:
+	Weapon Fragments
+	Category: Miscellaneous
+	Picture ID: 48
+	Value: 0
+	Weight: 0.2 lbs
+
+Row 10, Col 1:
+	Potion of Cat's Eyes
+	Category: Potion
+	Picture ID: 179
+	Value: 30
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; effect (Cat's Eyes) 2 ; to_flask
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 10, Col 2:
+	Oil
+	Category: Reactant
+	Picture ID: 210
+	Value: 10
+	Weight: 0.1 lbs
+	Item can be stacked (more than one per slot)
+	(4 of this item in slot)
+
+Row 10, Col 3:
+	Potion of Haste I
+	Category: Potion
+	Picture ID: 135
+	Value: 20
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; effect (Haste) 2 ; to_flask
+	Item can be stacked (more than one per slot)
+	(2 of this item in slot)
+
+Row 10, Col 4:
+	Detox Serum
+	Category: Potion
+	Picture ID: 169
+	Value: 80
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; cure_poison 4 ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 10, Col 5:
+	Potion of Keensight
+	Category: Potion
+	Picture ID: 166
+	Value: 100
+	Weight: 0.3 lbs
+	Script: sound (SFX_Quaff) ; effect (Keensight) 3 ; to_flask
+	Item can be stacked (more than one per slot)
+
+Row 10, Col 6:
+	Flask of Incinerator Fuel
+	Category: Weapon
+	Subcategory: Thrown Weapons
+	Picture ID: 39
+	Value: 400
+	Weight: 0.3 lbs
+	Item can be stacked (more than one per slot)
+
+Row 10, Col 7:
+	Gold: 36
+	Torches: 34
+	Current torch used for 0 turns
+
+READY ITEMS
+-----------
+
+Ready Item 1:
+	(none)
+
+Ready Item 2:
+	(none)
+
+Ready Item 3:
+	(none)
+
+Ready Item 4:
+	(none)
+
+Ready Item 5:
+	(none)
+
+Ready Item 6:
+	(none)
+
+Ready Item 7:
+	(none)
+
+Ready Item 8:
+	(none)
+

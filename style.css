@@ -1,0 +1,117 @@
+BODY {
+	font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: #2a2;
+}
+a:visited {
+    color: #151;
+}
+a:hover {
+    color: #3c3;
+}
+img {
+    border: 0;
+}
+pre {
+	background-color: #f2f2f2;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding: 5px;
+	border: 1px solid silver;
+}
+.preblock {
+	background-color: #eee;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding: 5px;
+	border: 1px solid silver;
+}
+table {
+	margin-left: 2em;
+}
+dt {
+	padding: 4px;
+}
+dd {
+    margin-bottom: .7em;
+}
+dd {
+	margin-left: 4em;
+	margin-right: 2em;
+}
+ul, ol {
+    margin-top: .3em;
+}
+.good {
+	color: green;
+}
+.ok {
+	color: olive;
+}
+.bad {
+	color: red;
+}
+.unknown {
+	color: gray;
+}
+.link {
+	text-decoration: underline;
+	font-size: 0.70em;
+	cursor: pointer;
+}
+.mediumblock {
+	font-size: 0.80em;
+	margin-left: 2em;
+	padding-top: 3px;
+}
+.smalltext {
+	font-size: 0.70em;
+}
+.clickable {
+	cursor: pointer;
+}
+.linkblock {
+    margin-left: 2em;
+    font-weight: bold;
+    position: relative;
+    top: -1em;
+    width: 100%;
+}
+.spacer {
+    margin-top: 0em;
+}
+.sublinks {
+    position: absolute;
+    left: 1em;
+    top: 1.2em;
+    border-left: 2px solid black;
+    padding-left: .4em;
+}
+.gfxexample li {
+    clear: left;
+    padding-top: .7em;
+}
+.gfxexample li img {
+    float: left;
+    margin-right: .5em;
+}
+.gfxexample li div {
+    margin-top: .2em;
+    float: left;
+}
+.scriptonly {
+    color: blue;
+}
+.scriptdiff {
+    color: darkgoldenrod;
+}
+.scriptdeprec {
+    color: gray;
+}
+.spacedol li {
+    margin-bottom: .4em;
+}

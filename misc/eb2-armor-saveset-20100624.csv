@@ -1,0 +1,216 @@
+type,name,value,max_hp,armor,weight
+Armor (Helm),Dwarven Steel Lord's Helm,900,800,6,6.0
+Armor (Helm),Iron Chain Coif,50,425,2,2.4
+Armor (Helm),Enchanter's Hat,80,1000,1,1.5
+Armor (Helm),Druid's Hat,200,1000,1,1.5
+Armor (Helm),Wizard's Hat,200,1000,1,1.5
+Armor (Cloak),Hide Heavy Cloak,60,250,3,3.0
+Armor (Cloak),Leather Heavy Cloak,90,300,3,3.6
+Armor (Torso),Iron Chain Armor,240,425,3,15.6
+Armor (Belt),Excellent Hemp Studded Belt,30,200,2,1.5
+Armor (Gauntlet),Accurate Gloves,100,800,1,0.5
+Armor (Gauntlet),Tinker's Gloves,50,800,1,0.5
+Armor (Gauntlet),Bronze Chain Gauntlets,60,350,2,2.2
+Armor (Legs),Steel Brigadine Leggings,600,500,5,23.4
+Armor (Legs),Bronze Chain Leggings,48,350,3,14.3
+Armor (Legs),Hide Leggings,24,250,2,5.0
+Armor (Feet),Tempered Steel Scale Boots,700,650,4,11.2
+Armor (Feet),Hide Boots,24,250,2,2.0
+Armor (Gauntlet),Burglar's Gloves,100,800,1,0.5
+Armor (Helm),Bronze Skullcap,30,350,3,1.7
+Armor (Helm),Bronze Full Helm,127,350,3,3.3
+Armor (Helm),Iron Full Helm,170,425,3,3.6
+Armor (Helm),Tempered Steel Lord's Helm,720,650,5,5.6
+Armor (Helm),Steel Skullcap,60,500,4,1.9
+Armor (Cloak),Iron Military Cloak,400,425,3,9.6
+Armor (Cloak),Cloak of the Shadow,300,550,1,2.0
+Armor (Torso),Iron Brigadine Armor,500,425,4,18.0
+Armor (Torso),Dwarven Steel Scale Armor,2000,800,7,27.0
+Armor (Belt),Strongman's Belt,120,350,1,2.0
+Armor (Legs),Tempered Steel Brigadine Leggings,800,650,5,25.2
+Armor (Legs),Steel Studded Leather,240,500,4,10.4
+Armor (Shield),Steel Large Shield,180,500,4,15.6
+Armor (Shield),Iron Large Shield,120,425,3,14.4
+Armor (Feet),Copper Chain Boots,65,300,1,6.0
+Armor (Feet),Boiled Leather Boots,400,400,4,3.3
+Armor (Helm),Iron Lord's Helm,360,425,4,4.8
+Armor (Helm),Sorcerer's Hat,500,1000,1,1.5
+Armor (Helm),Necromancer's Hat,500,1000,1,1.5
+Armor (Cloak),Tempered Steel Military Cloak,800,650,4,11.2
+Armor (Cloak),Steel Military Cloak,600,500,4,10.4
+Armor (Torso),Tempered Steel Plate Armor,2200,650,7,30.8
+Armor (Torso),Iron Plate Armor,1100,425,6,26.4
+Armor (Torso),Bronze Brigadine Armor,375,350,4,16.5
+Armor (Torso),Reptile Hide Armor,1600,600,6,6.4
+Armor (Shield),Steel Tower Shield,360,500,5,19.5
+Armor (Shield),Tungsten Lord's Shield,1200,1000,7,32.0
+Armor (Feet),Iron Scale Boots,350,425,3,9.6
+Armor (Torso),Hide Armor,220,250,4,4.0
+Armor (Gauntlet),Iron Chain Gauntlets,80,425,2,2.4
+Armor (Helm),Apprentice's Hat,10,1000,1,1.5
+Armor (Cloak),Hemp Light Cloak,5,200,1,0.8
+Armor (Torso),Iron Chain Jerkin,100,425,2,10.8
+Armor (Belt),Hemp Belt,10,200,1,1.5
+Armor (Shield),Pine Buckler,5,250,1,4.0
+Armor (Feet),Hemp Sandals,2,200,1,0.8
+Amulet,Rook's Amulet,400,0,1,0.2
+Armor (Helm),Iron Skullcap,40,425,3,1.8
+Armor (Torso),Studded Reptile Hide Armor,2000,800,6,6.8
+Armor (Torso),Steel Scale Armor,1200,500,6,23.4
+Armor (Torso),Boiled Leather Armor,800,400,5,5.2
+Armor (Torso),Immune Leather Armor,660,300,4,4.8
+Armor (Gauntlet),Assassin's Gloves,150,800,1,0.5
+Armor (Gauntlet),Tempered Steel Scale Gauntlets,480,650,4,3.5
+Armor (Legs),Emerald-encrusted Iron Studded Leather,320,425,3,9.6
+Armor (Legs),Iron Studded Leather,160,425,3,9.6
+Armor (Helm),Steel Full Helm,255,500,4,3.9
+Armor (Torso),Copper Studded Vest,80,300,1,4.0
+Armor (Torso),Bronze Studded Vest,120,350,2,4.4
+Armor (Torso),Steel Chain Armor,360,500,4,16.9
+Armor (Gauntlet),Trickster's Bracers,50,1000,1,0.5
+Armor (Gauntlet),Bronze Plate Bracers,52,350,3,2.2
+Armor (Legs),Iron Chain Leggings,64,425,3,15.6
+Armor (Shield),Tempered Steel Large Shield,240,650,4,16.8
+Armor (Shield),Bronze Large Shield,90,350,3,13.2
+Armor (Shield),Bronze Small Shield,22,350,2,7.7
+Armor (Shield),Copper Small Shield,15,300,1,7.0
+Armor (Feet),Bronze Chain Boots,97,350,2,6.6
+Armor (Feet),Studded Leather Boots,500,500,4,3.8
+Armor (Helm),Diviner's Hat,80,1000,1,1.5
+Armor (Helm),Steel Lord's Helm,540,500,5,5.2
+Armor (Torso),Leather Armor,330,300,4,4.8
+Armor (Belt),Bronze Plated Belt,90,350,3,4.4
+Armor (Belt),Hemp Studded Belt,20,200,2,1.5
+Armor (Legs),Impervious Iron Brigadine Leggings,1000,425,4,21.6
+Armor (Gauntlet),Steel Plate Bracers,105,500,4,2.6
+Armor (Feet),Fire Resistant Steel Chain Boots,292,500,3,7.8
+Armor (Helm),Iron Lord's Helm of Focus,1080,425,4,4.8
+Armor (Cloak),Dwarven Steel Military Cloak,1000,800,5,12.0
+Armor (Torso),Dwarven Steel Plate Armor,2750,800,8,33.0
+Armor (Gauntlet),Dwarven Steel Scale Gauntlets,600,800,5,3.8
+Armor (Shield),Dwarven Steel Tower Shield of Focus,1800,800,6,22.5
+Armor (Feet),Fireproof Spun Adamantium Boots,14960,1300,7,5.7
+Armor (Helm),Hemp Skullcap,2,200,1,0.8
+Armor (Torso),Hemp Jerkin,10,200,1,2.3
+Armor (Torso),Hide Jerkin,20,250,2,3.0
+Armor (Torso),Bronze Chain Jerkin,75,350,2,9.9
+Armor (Gauntlet),Hemp Bracers,4,200,1,0.2
+Armor (Legs),Steel Chain Leggings,96,500,4,16.9
+Armor (Helm),Tungsten Great Helm,2100,1000,7,8.0
+Armor (Helm),Spun Adamantium Skullcap,1700,1300,7,1.9
+Armor (Helm),Grand Hat of the Magus,1500,1000,1,1.5
+Armor (Torso),Tungsten Plate Armor,3300,1000,8,35.2
+Armor (Belt),Tungsten Warlord's Belt,840,1000,6,8.0
+Armor (Gauntlet),Tungsten Scale Gauntlets,720,1000,5,4.0
+Armor (Gauntlet),Adamantium Plate Gauntlets,1600,1600,7,8.0
+Armor (Gauntlet),Dwarven Steel Plate Gauntlets,1000,800,6,7.5
+Armor (Gauntlet),Mithril Plate Gauntlets,1400,1200,7,7.5
+Armor (Legs),Swift Steel Studded Leather,2100,500,5,10.4
+Armor (Torso),Dwarven Steel Scale Armor of Focus,6000,800,7,27.0
+Armor (Helm),Ruby-encrusted Iron Skullcap,100,637,3,1.8
+Armor (Helm),Steel Lord's Helm of Health,1620,500,5,5.2
+Armor (Torso),Bronze Chain Armor,180,350,3,14.3
+Armor (Gauntlet),Mighty Mithril Scale Gauntlets,2940,1200,6,3.8
+Armor (Legs),Steel Plate Leggings,1200,500,6,28.6
+Armor (Shield),Emerald-encrusted Tempered Steel Large Shield,480,650,4,16.8
+Armor (Shield),Iron Tower Shield,240,425,4,18.0
+Armor (Helm),Copper Chain Coif,25,300,1,2.0
+Armor (Helm),Copper Half-helm,18,300,1,1.5
+Armor (Torso),Copper Chain Jerkin,50,300,1,9.0
+Armor (Belt),Iron Plated Belt,120,425,3,4.8
+Armor (Helm),Tempered Steel Skullcap,80,650,4,2.1
+Armor (Belt),Leather Studded Belt,60,300,3,2.4
+Armor (Legs),Fire Resistant Iron Chain Leggings,96,425,3,15.6
+Armor (Helm),Warlock's Hat,850,1000,1,1.5
+Armor (Torso),Insulated Dragon Skin Armor,24000,1000,9,7.2
+Armor (Belt),Dwarven Steel Warlord's Belt,700,800,6,7.5
+Armor (Legs),Tungsten Studded Leather,1200,1000,6,12.8
+Armor (Legs),Iron Plate Leggings,800,425,5,26.4
+Armor (Feet),Bronze Scale Boots,262,350,3,8.8
+Armor (Feet),Hemp Boots,12,200,1,1.5
+Armor (Legs),Copper Chain Leggings,32,300,2,13.0
+Armor (Cloak),Boiled Leather Heavy Cloak,120,400,4,3.9
+Armor (Legs),Hemp Leggings,12,200,1,3.8
+Armor (Shield),Iron Small Shield,30,425,2,8.4
+Armor (Cloak),Zen Cloak,220,800,1,3.0
+Armor (Helm),Dwarven Steel Great Helm,1750,800,7,7.5
+Armor (Helm),Boiled Leather Skullcap,400,400,5,1.3
+Armor (Torso),Tempered Steel Scale Armor,1600,650,6,25.2
+Armor (Torso),Studded Leather Armor,2000,500,7,6.0
+Armor (Belt),Steel Warlord's Belt,420,500,5,6.5
+Armor (Gauntlet),Mithril Scale Gauntlets,840,1200,6,3.8
+Armor (Gauntlet),Tungsten Plate Gauntlets,1200,1000,6,8.0
+Armor (Gauntlet),Steel Scale Gauntlets,360,500,4,3.3
+Armor (Shield),Mithril Lord's Shield,1400,1200,8,30.0
+Armor (Shield),Tempered Steel Lord's Shield,800,650,6,28.0
+Armor (Feet),Dwarven Steel Plate Boots,1700,800,6,15.0
+Armor (Helm),Bronze Chain Coif,37,350,2,2.2
+Armor (Helm),Ruby-encrusted Tempered Steel Skullcap,200,975,4,2.1
+Armor (Torso),Steel Brigadine Armor,750,500,5,19.5
+Armor (Helm),Mithril Great Helm,2450,1200,8,7.5
+Armor (Torso),Tempered Steel Brigadine Armor,1000,650,5,21.0
+Armor (Torso),Mithril Plate Armor,3850,1200,9,33.0
+Armor (Torso),Iron Scale Armor,800,425,5,21.6
+Armor (Belt),Tempered Steel Warlord's Belt,560,650,5,7.0
+Armor (Legs),Bronze Brigadine Leggings,300,350,4,19.8
+Armor (Legs),Tempered Steel Studded Leather,800,650,5,11.2
+Armor (Belt),Hide Studded Belt,40,250,3,2.0
+Armor (Gauntlet),Copper Chain Gauntlets,40,300,1,2.0
+Armor (Torso),Studded Leather Armor of Focus,3000,500,5,6.0
+Armor (Legs),Bronze Studded Leather,120,350,3,8.8
+Armor (Cloak),Steel Military Cloak of Focus,1800,500,4,10.4
+Armor (Gauntlet),Iron Scale Gauntlets,240,425,3,3.0
+Armor (Legs),Tempered Steel Plate Leggings,1600,650,6,30.8
+Armor (Legs),Dwarven Steel Plate Leggings,2000,800,7,33.0
+Armor (Shield),Dwarven Steel Lord's Shield,1000,800,7,30.0
+Armor (Helm),Finely made Bronze Half-helm,27,489,2,1.7
+Armor (Gauntlet),Hemp Gloves,5,200,1,0.4
+Armor (Legs),Finely made Leather Leggings,36,419,2,6.0
+Armor (Feet),Leather Boots,36,300,2,2.4
+Armor (Helm),Studded Reptile Hide Skullcap,1000,800,6,1.7
+Armor (Helm),Studded Leather Skullcap,500,500,5,1.5
+Armor (Helm),Fireproof Steel Great Helm,4200,500,6,6.5
+Armor (Feet),Tempered Steel Plate Boots,1360,650,5,14.0
+Armor (Feet),Dragon Skin Boots,180,1000,5,3.6
+Armor (Gauntlet),Iron Plate Bracers,70,425,3,2.4
+Armor (Helm),Impervious Iron Skullcap,100,425,3,1.8
+Armor (Gauntlet),Tempered Steel Plate Bracers,140,650,4,2.8
+Armor (Shield),Dwarven Steel Tower Shield,600,800,6,22.5
+Armor (Feet),Spun Adamantium Boots,3740,1300,7,5.7
+Armor (Helm),Dragon Skin Skullcap,1500,1000,7,1.8
+Armor (Legs),Dwarven Steel Studded Leather,1000,800,6,12.0
+Armor (Feet),Mighty Tempered Steel Plate Boots,4760,650,5,14.0
+Armor (Feet),Reptile Hide Boots,1760,600,6,4.8
+Armor (Feet),Tungsten Plate Boots,2040,1000,6,16.0
+Armor (Helm),Tempered Steel Full Helm,340,650,4,4.2
+Armor (Torso),Emerald-encrusted Bronze Chain Armor,360,350,3,14.3
+Armor (Torso),Emerald-encrusted Leather Armor,660,300,4,4.8
+Armor (Legs),Immune Steel Studded Leather,480,500,4,10.4
+Armor (Shield),Immune Iron Large Shield,240,425,3,14.4
+Armor (Gauntlet),Fire Resistant Iron Chain Gauntlets,120,425,2,2.4
+Armor (Feet),Steel Scale Boots,525,500,4,10.4
+Armor (Torso),Steel Plate Armor,1650,500,7,28.6
+Armor (Gauntlet),Mighty Dwarven Steel Scale Gauntlets,2100,800,5,3.8
+Armor (Cloak),Emerald-encrusted Boiled Leather Heavy Cloak,240,400,4,3.9
+Armor (Cloak),Immune Boiled Leather Heavy Cloak,240,400,4,3.9
+Armor (Torso),Iron Studded Vest,160,425,2,4.8
+Armor (Legs),Dwarven Steel Brigadine Leggings,1000,800,6,27.0
+Armor (Torso),Tempered Steel Chain Armor,480,650,4,18.2
+Armor (Feet),Iron Chain Boots,130,425,2,7.2
+Armor (Shield),Tempered Steel Tower Shield,480,650,5,21.0
+Armor (Feet),Dwarven Steel Scale Boots,875,800,5,12.0
+Armor (Shield),Finely made Bronze Small Shield,22,489,2,7.7
+Armor (Legs),Leather Leggings,36,300,2,6.0
+Armor (Belt),Hide Belt,20,250,2,2.0
+Armor (Feet),Flimsy Hide Boots,24,150,2,2.0
+Armor (Feet),Finely made Hide Boots,24,349,2,2.0
+Armor (Legs),Finely made Hide Leggings,24,349,2,5.0
+Armor (Feet),Hide Sandals,10,250,2,1.0
+Armor (Torso),Finely made Copper Chain Jerkin,50,419,1,9.0
+Armor (Torso),Dwarven Steel Studded Vest,400,800,4,6.0
+Armor (Helm),Tempered Steel Chain Coif,100,650,3,2.8
+Armor (Helm),Bronze Half-helm,27,350,2,1.7
+Armor (Helm),Tempered Steel Lord's Helm of Health,2160,650,5,5.6
+Armor (Cloak),Dwarven Steel Military Cloak of Focus,3000,800,5,12.0
+Armor (Legs),Iron Brigadine Leggings,400,425,4,21.6
+Armor (Feet),Iron Plate Boots,680,425,4,12.0
