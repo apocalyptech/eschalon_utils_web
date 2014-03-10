@@ -7,22 +7,25 @@ esch_header('Installation');
 <h3>General Installation Notes</h3>
 
 <blockquote>
-<p>First off, if you're on Windows, just go ahead and download the EXE version.
-That's all that you need to download, and you can safely ignore the rest of
-this page.</p>
+<p>First off, if you're on Windows or Mac OS X, just go ahead and download
+the EXE or DMG version.  That's all that you need to download, and you can
+safely ignore the rest of this page.</p>
 <p>For other systems, or if you want to run the
-source directly in Windows, you'll need: <a href="http://www.gtk.org/">gtk+</a>,
+source directly in Windows/OS X, you'll need: <a href="http://www.gtk.org/">gtk+</a>,
 <a href="http://python.org/">Python</a>,
 <a href="http://cairographics.org/">Cairo</a>/<a href="http://cairographics.org/pycairo/">PyCairo</a>, and
 <a href="http://www.pygtk.org/">PyGTK</a>.
-For Linux users, these are certainly available from your distribution,
-and may already be installed.  Use your
-distro's package manager to install these, if they're not already.  OS X
-users are on their own for now, I'm afraid, but I'm pretty sure that
-packages do exist for that platform.</p>
+For Linux users, these are certainly available from your distribution, and
+may already be installed.  Use your distro's package manager to install
+these, if they're not already.  OS X users can get these from <a
+href="http://brew.sh/">homebrew or <a
+href="http://www.macports.org/">MacPorts</a>, and/or install them with <a
+href="http://www.pip-installer.org">pip</a> or <a
+href="http://peak.telecommunity.com/DevCenter/EasyInstall">easy_install</a>.
+</p>
 
-<p><strong>A note on the Book 2 Map Editor:</strong> The Book 2 map editor
-requires two additional packages: <a href="http://www.dlitz.net/software/pycrypto/">PyCrypto</a>
+<p><strong>A note on the Book 2/3 Map Editors:</strong> The Book 2/3 map editors
+require two additional packages: <a href="http://www.dlitz.net/software/pycrypto/">PyCrypto</a>
 and <a href="http://pypi.python.org/pypi/czipfile">czipfile</a>.  PyCrypto
 may be installed by default (its package name tends to be <tt>python-crypto</tt>
 on most distributions, though Gentoo packages it as <tt>pycrypto</tt>).
@@ -33,14 +36,15 @@ like so:</p>
 <p>or</p>
 <pre>$ sudo pip install czipfile</pre>
 <p>
-Once again, if you're using the Windows EXE, none of this should concern you.
+Once again, if you're using the Windows or Mac packages, none of this should
+concern you.
 </p>
 
-<p>An installer is provided (as of 0.5.0) for Windows, but for other
-platforms there are no installers.  On UNIX (and any other system you can
-convince it to run on) the app is meant to
-be basically just run from wherever you unzipped it or untarred it, or
-by setting up a symlink somewhere, or creating a shortcut in your desktop
+<p>A stand-alone package is provided (as of 0.5.0) for Windows and (as of
+1.0) for OS X, but for other platforms there are no installers.  On UNIX
+(and any other system you can convince it to run on) the app is meant to be
+basically just run from wherever you unzipped it or untarred it, or by
+setting up a symlink somewhere, or creating a shortcut in your desktop
 environment of choice.</p>
 
 <p>The map editor component of this package requires that an Eschalon install
@@ -70,7 +74,9 @@ your <tt>$PATH</tt> (<tt>~/bin</tt> is probably the best location).  For example
 $ ln -s /path/to/eschalon_b1_char.py .
 $ ln -s /path/to/eschalon_b1_map.py .
 $ ln -s /path/to/eschalon_b2_char.py .
-$ ln -s /path/to/eschalon_b2_map.py .</pre>
+$ ln -s /path/to/eschalon_b2_map.py .
+$ ln -s /path/to/eschalon_b3_char.py .
+$ ln -s /path/to/eschalon_b3_map.py .</pre>
 
 <p>At that point you should be able to just run "<tt>eschalon_b1_char.py</tt>" from the
 command prompt, for instance.  Setting up shortcuts through your window
@@ -121,7 +127,7 @@ to be installed:</p>
 <p></li>
 <li><strong><a href="http://www.pygtk.org/downloads.html">PyGTK</a></strong>
 <span class="smalltext">Recommended as of 2012.02.05: <a href="http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/pygtk-all-in-one-2.24.1.win32-py2.7.msi">2.24.1 All-In-One Installer</a> - note that the all-in-one installers remove the previous need to manually install gtk+ and the three main PyGTK components.
-<p>And, for the Book 2 Map Editor:</p>
+<p>And, for the Book 2/3 Map Editors:</p>
 </li>
 <li><strong><a href="http://www.dlitz.net/software/pycrypto/">PyCrypto</a></strong> <span class="smalltext">Recommended as of 2012.02.05: <a href="http://www.voidspace.org.uk/downloads/pycrypto-2.3.win32-py2.7.zip">2.3, from voidspace.org.uk</a></span></li>
 <li><strong><a href="http://pypi.python.org/pypi/czipfile">czipfile</a></strong> <span class="smalltext">Recommended as of 2012.02.05: <a href="http://pypi.python.org/packages/2.7/c/czipfile/czipfile-1.0.0.win32-py2.7.exe">1.0.0</a></span></li>
@@ -135,9 +141,29 @@ and it'll open up an "Open" dialog.</p>
 <h3>OS X Specifics</h3>
 
 <blockquote>
+<a name="osx"></a>
+<p>Starting with 1.0, I've provided an DMG disk image with a bundled
+stand-alone application. This is the recommended way
+to run the application on Mac OS X.</p>
 <p>
-<a name="osx"></a>I don't have a Mac system to try this out myself, but I received a report that
-the utilities are working in OSX if you follow these instructions:
+Here is how I set up the current OS X testing/build environment:
+</p>
+<ol class="spacedol">
+<li>Install <a href="http://brew.sh/">Homebrew</a>. (This requires <a href="http://developer.apple.com/tools/xcode/">XCode</a>,
+which might not be installed by default, and apparently might cost you $5,
+if you're not part of Apple's developer program.)<br></li>
+<li>Run the following commands in the "Terminal" application:<br>
+<pre>$ brew install pygtk
+$ sudo easy_install czipfile
+$ sudo easy_install pycrypto</pre>
+</li>
+<li>Go to the directory where you put the program source, and run the
+editor of your choice like any other command line application.
+<pre>$ ./eschalon_b3_map.py</pre>
+</li>
+</ol>
+<p>
+Here is an older set of instructions that also worked for some people:
 </p>
 <ol class="spacedol">
 <li>Install <a href="http://www.macports.org/install.php">MacPorts</a>.
@@ -169,18 +195,6 @@ Terminal as if it were any other CLI application.</li>
 to run this command:
 <pre>$ sudo port -f uninstall render</pre></p>
 
-<p>I'd appreciate it if other Mac folks would 
-<a href="mailto:pez@apocalyptech.com?subject=Eschalon OS X">let me know</a> 
-if this works for you, and if there's anything else that needs doing.  If anyone's
-interested in packaging this up into a .dmg or something which could be more easily
-distributed, I'd love to hear about that, too.
-</p>
-<p>
-If you're just looking to edit Book 1 Character files, you may want to check out
-<a href="http://www.oriontransfer.co.nz/software/goblin-hacker/index">Goblin Hacker</a>
-instead, which is a native OS X application, and should be far easier
-to get running.
-</p>
 </blockquote>
 
 <? esch_footer(); ?>

@@ -5,7 +5,7 @@ $links = array(
     array('index.php', 'Main'),
     array('installation.php', 'Installation'),
     array('usage.php', 'Usage'),
-    array('map.php', 'Mapping Information'),
+    array('map.php', 'Map/Script Information'),
     array('screenshots.php', 'Screenshots (character)'),
     array('screenshots_map.php', 'Screenshots (maps)')
 );
@@ -13,7 +13,8 @@ $links = array(
 $sublinks = array(
     'map.php' => array(
         array('b1scripting.php', 'Book 1 Scripting'),
-        array('b2scripting.php', 'Book 2 Scripting')
+        array('b2scripting.php', 'Book 2 Scripting'),
+        array('b3scripting.php', 'Book 3 Scripting')
     )
 );
 

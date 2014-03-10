@@ -14,8 +14,9 @@ esch_header();
 <blockquote>
 <p>This package is a collection of applications which let you edit your
 character and maps in savegames of
-<a href="http://basiliskgames.com/eschalon-book-i">Eschalon Book I</a> and
-<a href="http://basiliskgames.com/eschalon-book-ii">Eschalon Book II</a>
+<a href="http://basiliskgames.com/eschalon-book-i">Eschalon Book I</a>,
+<a href="http://basiliskgames.com/eschalon-book-ii">Eschalon Book II</a>,
+and <a href="http://basiliskgames.com/eschalon-book-iii">Eschalon Book III</a>
 by <a href="http://basiliskgames.com/">Basilisk Games</a>.</p>
 <p>Right now it supports the editing of just about everything you'd want to edit, though
 there's still plenty of values in the file of whose purpose I'm unaware.
@@ -26,13 +27,8 @@ still, which is quite a bit.  The
 pretty informative as well.  The app is released under the
 <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU GPL 2.0</a>.</p>
 
-<p>The apps were developed on Linux, and they use Python, GTK+,
-Cairo, and PyGTK to do
-its stuff.  It works on Windows as well.  I've had at least one report of
-somebody getting these packages to work on OS X; see the <a href="installation.php">Installation page</a>
-for some more information on that.
-<em>(See the "related" section below for an app which is probably much
-easier to get running on OS X, but only lets you edit Book 1 character files.)</em></p>
+<p>The apps were developed on Linux, and they use Python, GTK+, Cairo, and
+PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 
 <p>
 <strong>Project Page:</strong> <a href="https://sourceforge.net/projects/eschalonutils/">Sourceforge</a><br>
@@ -85,8 +81,12 @@ thing and respect
 <ol>
 <li>You cannot sell what you make; it must be free.</li>
 <li>If you put your content up for download anywhere other than
-    <a href="http://basiliskgames.com/forums">the official Basilisk Games forums</a>,
-    you need to have a link that jumps back to the <a href="http://basiliskgames.com/eschalon-book-i">Book I page</a>.</li>
+    <a href="http://basiliskgames.com/forums">the official Basilisk Games
+    forums</a>, you need to have a link that jumps back to the
+    <a href="http://basiliskgames.com/eschalon-book-i">Book I page</a> (or
+    presumably the <a href="http://basiliskgames.com/eschalon-book-ii">
+    Book II</a> or <a href="http://basiliskgames.com/eschalon-book-iii">Book
+    III</a> pages for mods to those games).</li>
 </ol>
 </blockquote>
 
@@ -98,6 +98,10 @@ Hm, I believe these should all be taken care of.
 -->
 
 <blockquote>
+<p><a href="http://dx4.org/eschalon_utils/eschalon_utils_setup.exe">Unofficial pre-release (Windows)</a></p>
+
+<p><a href="http://dx4.org/eschalon_utils/Eschalon%20Utils.dmg">Unofficial pre-release (Mac OS X)</a></p>
+
 <p><a href="dist/eschalon_utils-0.8.1/ChangeLog.txt">ChangeLog</a></p>
 <strong>Current:</strong>
 <ul>
@@ -144,6 +148,10 @@ screenshots)</em></li>
 <li><a href="http://basiliskgames.com/forums/viewtopic.php?f=12&t=5449">Port Kuudad Tower</a>, by raverdave2k</li>
 <li><a href="http://basiliskgames.com/forums/viewtopic.php?f=12&t=5470">Treasure of the Orakur</a>, by raverdave2k</li>
 </ul>
+<p><strong>Book III</strong></p>
+<ul>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
+</ul>
 </blockquote>
 
 <h3>Related</h3>
@@ -154,10 +162,7 @@ screenshots)</em></li>
 Samuel Williams and Hermann Gundel) created a Book 1 character editor for OSX called
 <a href="http://www.oriontransfer.co.nz/software/goblin-hacker/index">Goblin Hacker</a>,
 which looks real nice, and from a visual perspective, at least, puts my
-app to shame.  &lt;smile&gt;  It seems that getting all the prerequisites
-for my application installed on OSX is somewhat nontrivial, and frustrating
-for non-techie users, so if you're on OSX, it looks like this is probably
-a far better solution for you, at least for character editing.
+app to shame.  &lt;smile&gt;
 </p>
 </blockquote>
 

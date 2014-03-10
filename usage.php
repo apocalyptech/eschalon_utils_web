@@ -128,7 +128,7 @@ them.</p>
 <p style="text-align: center;"><img src="hilight-barrier.png" alt="Barrier Example"><br>
 <span class="smalltext">All three types of barrier highlighting</span></p>
 <p>The "objects" filter will highlight most objects with yellow, sound and
-light generators with cyan (again, <a href="map.php">see the Mapping Information section</a>),
+light generators with cyan (again, <a href="map.php">see the Map/Script Information section</a>),
 and "broken" objects (with no object type specified) in red.</p>
 <p style="text-align: center;"><img src="hilight-script-regular.png" alt="Regular Objects">
 <img src="hilight-script-odd.png" alt="Sound Generator Object"><br>

@@ -1,7 +1,7 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Mapping Information');
+esch_header('Map/Script Information');
 ?>
 
 <p>Some of how Eschalon's map files are used may not be immediately
@@ -12,7 +12,7 @@ obvious, so I figure I'll enumerate some points here.</p>
 <blockquote>
 <p>Eschalon keeps all its global maps in the "data" directory of the
 folder where it was installed, in Book 1, or in the main "datapak" for
-Book 2.  Once your character enters a new map,
+Book 2/3.  Once your character enters a new map,
 the game engine loads in that global map file and from that point on
 only uses that new copy of the map, which is the version that's saved
 in your savegame folder when you save the game.  The format of the
@@ -43,22 +43,23 @@ an existing one and saving with a new name, note that this value <em>must</em>
 be the same as the filename of the map (minus the ".map" extension), otherwise
 Eschalon won't save the state of the map properly in savegames, and might
 actually overwrite the state of the map that you copied from, which could
-certainly be undesirable.  So be careful about that.  Book 2 doesn't have
+certainly be undesirable.  So be careful about that.  Book 2/3 doesn't have
 the Map ID embedded, so it's not an issue there.</p>
 
-<p>The map names for the main "outisde" area of Eschalon are named with
-a two-digit number for Book 1, and a four-digit number for Book 2,
+<p>The map names for the main "outside" area of Eschalon are named with
+a two-digit number for Book 1, and a four-digit number for Book 2/3,
 which correspond to where the map is placed.  In Book 1, the first
 digit is the y-coordinate (or row), and the second is the x-coordinate (or
-column).  In Book 2, the first two digits are the x-coordinate, and the second
+column).  In Book 2/3, the first two digits are the x-coordinate, and the second
 two are the y-coordinate.  The first map your character starts out in is
-<tt>35.map</tt> in Book 1, and <tt>5050.map</tt> in Book 2.  The various dungeon level
+<tt>35.map</tt> in Book 1, and <tt>5050.map</tt> in Book 2/3.  The various dungeon level
 names are, for the most part, pretty obvious.  For reference, here are the outside
 map names:
 <table>
 <tr>
 <th>Book 1</th>
 <th>Book 2</th>
+<th>Book 3</th>
 </tr>
 <tr>
 <td valign="top">
@@ -118,6 +119,26 @@ map names:
 <li><strong>5247</strong> - The Forsaken Coast</li>
 <li><strong>5248</strong> - Port Kuudad</li>
 <li><strong>5249</strong> - Northern Farrock Range</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><strong>4849</strong> - Moonrise</li>
+<li><strong>4850</strong> - Baasilt Dunes</li>
+<li><strong>4948</strong> - Western Astral Range</li>
+<li><strong>4949</strong> - Elderoak Forest</li>
+<li><strong>4950</strong> - Southern Boglands</li>
+<li><strong>5047</strong> - Alundar's Domain</li>
+<li><strong>5048</strong> - Warlord's Pass</li>
+<li><strong>5049</strong> - Valley of the Wanderer</li>
+<li><strong>5050</strong> - Rockhammer</li>
+<li><strong>5051</strong> - Deadman's Strand</li>
+<li><strong>5052</strong> - Mirkland</li>
+<li><strong>5148</strong> - Eastern Astral Range</li>
+<li><strong>5149</strong> - Macross Point</li>
+<li><strong>5150</strong> - Oceana Lowlands</li>
+<li><strong>5151</strong> - Castle by the Sea</li>
+<li><strong>5152</strong> - East Mirkland Delta</li>
 </ul>
 </td>
 </tr>
