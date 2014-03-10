@@ -84,7 +84,7 @@ map names:
 <li><strong>53</strong> - The Gulf of Madria</li>
 </ul>
 </td>
-<td>
+<td valign="top">
 <ul>
 <li><strong>4447</strong> - Hammerlorne Mountain</li>
 <li><strong>4547</strong> - Durnore Region</li>
@@ -121,7 +121,7 @@ map names:
 <li><strong>5249</strong> - Northern Farrock Range</li>
 </ul>
 </td>
-<td>
+<td valign="top">
 <ul>
 <li><strong>4849</strong> - Moonrise</li>
 <li><strong>4850</strong> - Baasilt Dunes</li>
