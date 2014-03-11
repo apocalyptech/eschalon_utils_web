@@ -725,14 +725,14 @@ Note that I have not thoroughly tested the parameters for most effects.
 -->
 <ul class="gfxexample">
 <li><tt>Becon</tt><br>
-    <img src="b3_gfx_becon.png" alt="Becon Example">
+    <img src="b3_gfx_becon.gif" alt="Becon Example">
 </li>
 <li><tt>Blast Sparks</tt><br>
-    <img src="b3_gfx_blastsparks.png" alt="Blast Sparks Example">
+    <img src="b3_gfx_blastsparks.gif" alt="Blast Sparks Example">
 </li>
 <li><tt>Blood / Gibs</tt><br>
-    <img src="b3_gfx_blood.png" alt="Gibs Example">
-    <img src="b3_gfx_gibs.png" alt="Gibs Example">
+    <img src="b3_gfx_blood.gif" alt="Gibs Example">
+    <img src="b3_gfx_gibs.gif" alt="Gibs Example">
     <div>
     0. white<br>
     1. red<br>
@@ -741,18 +741,18 @@ Note that I have not thoroughly tested the parameters for most effects.
     </div>
 </li>
 <li><tt>Bubble</tt><br>
-    <img src="b3_gfx_bubble.png" alt="Bubble Example">
+    <img src="b3_gfx_bubble.gif" alt="Bubble Example">
 </li>
 <li><tt>Chest Open</tt><br>
-    <img src="b3_gfx_chestopen.png" alt="Chest Open Example">
+    <img src="b3_gfx_chestopen.gif" alt="Chest Open Example">
     <div>
     The number of sparks to display. The typical number used in the
     game is 4, but I've tried up to 1000.
     </div>
 </li>
 <li><tt>Colored Mist / Colored Smoke</tt><br>
-    <img src="b3_gfx_coloredmist.png" alt="Colored Mist Example">
-    <img src="b3_gfx_coloredsmoke.png" alt="Colored Smoke Example">
+    <img src="b3_gfx_coloredmist.gif" alt="Colored Mist Example">
+    <img src="b3_gfx_coloredsmoke.gif" alt="Colored Smoke Example">
     <div>
     0. white<br>
     1. green<br>
@@ -765,17 +765,17 @@ Note that I have not thoroughly tested the parameters for most effects.
     </div>
 </li>
 <li><tt>Divine Light</tt><br>
-    <img src="b3_gfx_divinelight.png" alt="Divine Light Example">
+    <img src="b3_gfx_divinelight.gif" alt="Divine Light Example">
 </li>
 <li><tt>Electric</tt><br>
-    <img src="b3_gfx_electric.png" alt="Electric Example">
+    <img src="b3_gfx_electric.gif" alt="Electric Example">
 </li>
 <li><tt>FireDamage</tt><br>
-    <img src="b3_gfx_firedamage.png" alt="FireDamage Example">
+    <img src="b3_gfx_firedamage.gif" alt="FireDamage Example">
 </li>
 <li><tt>Flare / Flare Burst</tt><br>
-    <img src="b3_gfx_flare.png" alt="Flare Example">
-    <img src="b3_gfx_flareburst.png" alt="Flare Burst Example">
+    <img src="b3_gfx_flare.gif" alt="Flare Example">
+    <img src="b3_gfx_flareburst.gif" alt="Flare Burst Example">
     <div>
     0. <em>(invalid)</em><br>
     1. red<br>
@@ -785,20 +785,20 @@ Note that I have not thoroughly tested the parameters for most effects.
     </div>
 </li>
 <li><tt>Floatie</tt><br>
-    <img src="b3_gfx_floatie.png" alt="Floatie Example">
+    <img src="b3_gfx_floatie.gif" alt="Floatie Example">
     <div>
     The number you want to display
     </div>
 </li>
 <li><tt>MagSparks</tt><br>
-    <img src="b3_gfx_magsparks.png" alt="MagSparks Example">
+    <img src="b3_gfx_magsparks.gif" alt="MagSparks Example">
 </li>
 <li><tt>Port</tt><br>
-    <img src="b3_gfx_port.png" alt="Port Example">
+    <img src="b3_gfx_port.gif" alt="Port Example">
 </li>
 <li><tt>Shower / Sparkles</tt><br>
-    <img src="b3_gfx_shower.png" alt="Shower Example">
-    <img src="b3_gfx_sparkles.png" alt="Sparkles Example">
+    <img src="b3_gfx_shower.gif" alt="Shower Example">
+    <img src="b3_gfx_sparkles.gif" alt="Sparkles Example">
     <div>
     0. <em>(invalid)</em><br>
     1. Red<br>
@@ -811,25 +811,25 @@ Note that I have not thoroughly tested the parameters for most effects.
     </div>
 </li>
 <li><tt>Sonic</tt><br>
-    <img src="b3_gfx_sonic.png" alt="Sonic Example">
+    <img src="b3_gfx_sonic.gif" alt="Sonic Example">
 </li>
 <li><tt>Sparks</tt><br>
-    <img src="b3_gfx_sparks.png" alt="Sparks Example">
+    <img src="b3_gfx_sparks.gif" alt="Sparks Example">
     <div>
     0. Yellow <em>(no discernable change on other numbers)</em>
     </div>
 </li>
 <li><tt>Spirit Rise</tt><br>
-    <img src="b3_gfx_spiritrise.png" alt="Spirit Rise Example">
+    <img src="b3_gfx_spiritrise.gif" alt="Spirit Rise Example">
 </li>
 <li><tt>Stunned</tt><br>
-    <img src="b3_gfx_stunned.png" alt="Stunned Example">
+    <img src="b3_gfx_stunned.gif" alt="Stunned Example">
 </li>
 <li><tt>Swirl</tt><br>
-    <img src="b3_gfx_swirl.png" alt="Swirl Example">
+    <img src="b3_gfx_swirl.gif" alt="Swirl Example">
 </li>
 <li><tt>Vaporize</tt><br>
-    <img src="b3_gfx_vaporize.png" alt="Vaporize Example">
+    <img src="b3_gfx_vaporize.gif" alt="Vaporize Example">
 </li>
 </ul>
 </dd>
