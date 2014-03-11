@@ -713,21 +713,46 @@ outside the map where they originally appear.
 </ol>
 </dd>
 
-<dt><b>gfx</b> (<i>&lt;gfx effect&gt;</i>) <i>&lt;coords&gt;</i> <i>&lt;colornum&gt;</i></dt>
+<dt><b>gfx</b> (<i>&lt;gfx effect&gt;</i>) <i>&lt;coords&gt;</i> <i>&lt;parameter&gt;</i></dt>
 <dd>
-Launches a fancy graphical effect at the given coordinates.
-Coords are usually "0" when used in an entity death script, to denote
-the "current tile."  Effects that I've noted in the game, and the associated
-<tt>colornum</tt> values for each (not updated for Book III):
+Launches a fancy graphical effect at the given coordinates.  Coords are
+usually "0" when used in an entity death script, to denote the "current
+tile." The "parameter" is usually a color number, but can be other things. 
+Here are effects and parameters that I've verified working in Book III.
+Note that I have not thoroughly tested the parameters for most effects.
+<!--
+
+-->
 <ul class="gfxexample">
 <li><tt>Becon</tt><br>
-    <img src="b2_gfx_becon.png" alt="Becon Example">
+    <img src="b3_gfx_becon.png" alt="Becon Example">
+</li>
+<li><tt>Blast Sparks</tt><br>
+    <img src="b3_gfx_blastsparks.png" alt="Blast Sparks Example">
+</li>
+<li><tt>Blood / Gibs</tt><br>
+    <img src="b3_gfx_blood.png" alt="Gibs Example">
+    <img src="b3_gfx_gibs.png" alt="Gibs Example">
     <div>
-    0. Yellow <em>(no discernable change on other numbers)</em>
+    0. white<br>
+    1. red<br>
+    2. green<br>
+    3. black
     </div>
 </li>
-<li><tt>Colored Smoke</tt><br>
-    <img src="b2_gfx_colored_smoke.png" alt="Colored Smoke Example">
+<li><tt>Bubble</tt><br>
+    <img src="b3_gfx_bubble.png" alt="Bubble Example">
+</li>
+<li><tt>Chest Open</tt><br>
+    <img src="b3_gfx_chestopen.png" alt="Chest Open Example">
+    <div>
+    The number of sparks to display. The typical number used in the
+    game is 4, but I've tried up to 1000.
+    </div>
+</li>
+<li><tt>Colored Mist / Colored Smoke</tt><br>
+    <img src="b3_gfx_coloredmist.png" alt="Colored Mist Example">
+    <img src="b3_gfx_coloredsmoke.png" alt="Colored Smoke Example">
     <div>
     0. white<br>
     1. green<br>
@@ -740,13 +765,17 @@ the "current tile."  Effects that I've noted in the game, and the associated
     </div>
 </li>
 <li><tt>Divine Light</tt><br>
-    <img src="b2_gfx_divine_light.png" alt="Divine Light Example">
-    <div>
-    2. White <em>(the default; other numbers don't seem to change the effect)</em>
-    </div>
+    <img src="b3_gfx_divinelight.png" alt="Divine Light Example">
 </li>
-<li><tt>Flare</tt><br>
-    <img src="b2_gfx_flare.png" alt="Flare Example">
+<li><tt>Electric</tt><br>
+    <img src="b3_gfx_electric.png" alt="Electric Example">
+</li>
+<li><tt>FireDamage</tt><br>
+    <img src="b3_gfx_firedamage.png" alt="FireDamage Example">
+</li>
+<li><tt>Flare / Flare Burst</tt><br>
+    <img src="b3_gfx_flare.png" alt="Flare Example">
+    <img src="b3_gfx_flareburst.png" alt="Flare Burst Example">
     <div>
     0. <em>(invalid)</em><br>
     1. red<br>
@@ -755,33 +784,21 @@ the "current tile."  Effects that I've noted in the game, and the associated
     4. white
     </div>
 </li>
-<li><tt>Flare Burst</tt> <em>(very much like <tt>Flare</tt> but rotates more)</em><br>
-    <img src="b2_gfx_flare.png" alt="Flare Burst Example">
+<li><tt>Floatie</tt><br>
+    <img src="b3_gfx_floatie.png" alt="Floatie Example">
     <div>
-    0. <em>(invalid)</em><br>
-    1. red<br>
-    2. Green<br>
-    3. Purplish-White<br>
-    4. white
+    The number you want to display
     </div>
 </li>
-<li><tt>Gibs</tt><br>
-    <img src="b2_gfx_gibs.png" alt="Gibs Example">
-    <div>
-    0. white<br>
-    1. red<br>
-    2. green<br>
-    3. black
-    </div>
+<li><tt>MagSparks</tt><br>
+    <img src="b3_gfx_magsparks.png" alt="MagSparks Example">
 </li>
 <li><tt>Port</tt><br>
-    <img src="b2_gfx_port.png" alt="Port Example">
-    <div>
-    0. Multicolored <em>(no discernable change on other numbers)</em>
-    </div>
+    <img src="b3_gfx_port.png" alt="Port Example">
 </li>
-<li><tt>Sparkles</tt><br>
-    <img src="b2_gfx_sparkles.png" alt="Sparkles Example">
+<li><tt>Shower / Sparkles</tt><br>
+    <img src="b3_gfx_shower.png" alt="Shower Example">
+    <img src="b3_gfx_sparkles.png" alt="Sparkles Example">
     <div>
     0. <em>(invalid)</em><br>
     1. Red<br>
@@ -793,11 +810,26 @@ the "current tile."  Effects that I've noted in the game, and the associated
     7. Multicolored
     </div>
 </li>
+<li><tt>Sonic</tt><br>
+    <img src="b3_gfx_sonic.png" alt="Sonic Example">
+</li>
 <li><tt>Sparks</tt><br>
-    <img src="b2_gfx_sparks.png" alt="Sparks Example">
+    <img src="b3_gfx_sparks.png" alt="Sparks Example">
     <div>
     0. Yellow <em>(no discernable change on other numbers)</em>
     </div>
+</li>
+<li><tt>Spirit Rise</tt><br>
+    <img src="b3_gfx_spiritrise.png" alt="Spirit Rise Example">
+</li>
+<li><tt>Stunned</tt><br>
+    <img src="b3_gfx_stunned.png" alt="Stunned Example">
+</li>
+<li><tt>Swirl</tt><br>
+    <img src="b3_gfx_swirl.png" alt="Swirl Example">
+</li>
+<li><tt>Vaporize</tt><br>
+    <img src="b3_gfx_vaporize.png" alt="Vaporize Example">
 </li>
 </ul>
 </dd>
