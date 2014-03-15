@@ -150,6 +150,7 @@ screenshots)</em></li>
 </ul>
 <p><strong>Book III</strong></p>
 <ul>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9211">The Mystery of Rockhammer Mine</a>, by MyGameCompany</li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
 </ul>
 </blockquote>
