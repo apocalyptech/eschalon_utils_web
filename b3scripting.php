@@ -74,7 +74,8 @@ there are other internal flags the game uses which are technically numbered as
 quests 100 through 124.  Each quest has a "state" number associated with it.  To put
 a quest into the player's Quest book, you'd set the state to 1.  It looks like a
 successfully-completed quest will have a state of 9.  Also, quests that
-haven't started yet might have a state of -1.</p>
+are not possible to complete have a state of -1 and ones that were
+intentionally abandoned have -2.</p>
 <p>I've been told that it is
 possible to use quests higher than 124 (up to at least 20,000, actually) as
 state variables of your own
@@ -110,7 +111,7 @@ yet been tested in Book III. In any case, it's likely a debugging tool.
 
 <dt><b class="scriptdeprec">quest_info</b></dt>
 <dd>
-Unknown; not used
+List all the quests and their status
 </dd>
 
 </dl>
@@ -261,8 +262,9 @@ Place the named item in the player's inventory
 
 <dt><b>remove_item</b> (<i>&lt;itemname&gt;</i>)</dt>
 <dd>
-Remove the named item from the player's inventory.  You may want to
-call a <tt>cond_item</tt> first, to be safe.
+Remove the named item from the player's inventory.  Safe to call even
+if the player doesn't have the item, in which case it acts like 
+<tt>cond_item</tt> and stops execution of the rest of the script.
 </dd>
 
 <dt><b class="scriptdeprec">strip_items</b></dt>
@@ -348,6 +350,11 @@ Restores the given amount of MP
 <dt><b>cure_ailment</b></dt>
 <dd>
 Cures ailments.  Usually this is associated with a potion, but it doesn't have to be.
+</dd>
+
+<dt><b>cure_disease</b></dt>
+<dd>
+Cures diseases.
 </dd>
 
 <dt><b>cure_poison</b> <i>&lt;val&gt;</i></dt>
@@ -504,7 +511,7 @@ shower of sparks. Secrets present in the game are 1-30, but you may
 be able to add more.
 </dd>
 
-<dt><b class="scriptonly">convert_object</b> <i>&lt;coords&gt;</i> <i>&lt;graphic number&gt;</i></dt>
+<dt><b class="scriptonly">convert_obj</b> <i>&lt;coords&gt;</i> <i>&lt;graphic number&gt;</i></dt>
 <dd>
 Replaces the graphic for the object at given coordinates with a new one.
 </dd>
@@ -655,22 +662,22 @@ MP to go below zero.
 
 <dt><b class="scriptdeprec">dev_map</b></dt>
 <dd>
-Unknown.
+Developer quick-jump to map
 </dd>
 
 <dt><b class="scriptdeprec">rank</b></dt>
 <dd>
-Unknown.
+Shows the end-game stats screen
 </dd>
 
 <dt><b class="scriptdeprec">reload</b></dt>
 <dd>
-Unknown.
+Reload current map
 </dd>
 
 <dt><b class="scriptdeprec">reset</b></dt>
 <dd>
-Unknown.
+Reset quests and NPC flags (developer tool)
 </dd>
 
 <dt><b class="scriptdeprec">roll</b></dt>
@@ -896,9 +903,9 @@ disease.
 
 <dt><b class="scriptdeprec">drama</b></dt>
 <dd>
-Unknown.  This isn't used at all in Book 2/3, and only once in Book 1 (and
-I can't figure out what it does in Book 1 either).  Probably best not to
-use it.  The command <em>does</em> still exist in the engine, though.
+Plays a "drama" sound.  This isn't used at all in Book 2/3, and only once in
+Book 1 Probably best not to use it.  The command <em>does</em> still exist
+in the engine, though.
 </dd>
 
 <dt><b class="scriptdeprec">alert_npcs</b></dt>
@@ -1007,8 +1014,9 @@ Drops the named item with the specified percent chance.  Percentage
 
 <dt><b>drop_loot</b> <i>&lt;lootlevel&gt;</i></dt>
 <dd>
-Drops loot at the given level.  0 is cheap, 11 is great. Dwarves drop 3,
-marauders 4, and skeletons 11.
+Drops loot at the given level.  0 is cheap, 10 is great. Dwarves drop 3,
+marauders 4, and 11 is a special case for skeletons (mid-level weapons,
+armor, gold).
 </dd>
 
 </dl>
