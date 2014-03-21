@@ -40,17 +40,11 @@ PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 <h3>A Note about Book III Support</h3>
 
 <blockquote>
-<p>Thanks to Elliot Kendall/SpottedShroom, and of course the wonder that
-is Github,
-<a href="http://basiliskgames.com/forums/viewtopic.php?f=26&t=8963">Book
-III support is available via some unofficial packages on the Basilisk Games
-forums</a>.  I've been merging these changes into the project's 
-<a href="https://github.com/apocalyptech/eschalon_utils">github repository</a>,
-though it will probably be into March before I can get out an official release.
-These changes do include some updated build instructions for OSX, so Mac
-users might be particularly interested in it.  Anyway, look
-for official support for Book III within the coming weeks, and for now enjoy
-the unofficial packages!  <em>(Last update on this page: Feb 20, 2014)</em></p>
+<p>Links to some "unofficial" builds which support Book III are below,
+mostly thanks to Elliot Kendall/SpottedShroom, who's done the majority of
+the work to add Book III support.  As of March 21st (2014), we're looking
+to hopefully get an official release out within the next week or so.
+<em>(Last update on this page: March 21, 2014)</em></p>
 </blockquote>
 
 <h3>Disclaimer</h3>
