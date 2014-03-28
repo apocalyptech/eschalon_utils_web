@@ -42,9 +42,10 @@ PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 <blockquote>
 <p>Links to some "unofficial" builds which support Book III are below,
 mostly thanks to Elliot Kendall/SpottedShroom, who's done the majority of
-the work to add Book III support.  As of March 21st (2014), we're looking
-to hopefully get an official release out within the next week or so.
-<em>(Last update on this page: March 21, 2014)</em></p>
+the work to add Book III support.  Currently we're in a sort of feature
+freeze before the official release, for testing purposes, and should be
+releasing a new version (with Book III support) by April 2nd.
+<em>(Last update on this page: March 28, 2014)</em></p>
 </blockquote>
 
 <h3>Disclaimer</h3>
