@@ -40,12 +40,14 @@ PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 <h3>A Note about Book III Support</h3>
 
 <blockquote>
-<p>Links to some "unofficial" builds which support Book III are below,
-mostly thanks to Elliot Kendall/SpottedShroom, who's done the majority of
-the work to add Book III support.  Currently we're in a sort of feature
-freeze before the official release, for testing purposes, and should be
-releasing a new version (with Book III support) by April 2nd.
-<em>(Last update on this page: March 28, 2014)</em></p>
+<p>Book III support should be forthcoming in the week of March 31st.  Support
+is available in github, mostly thanks to Elliot Kendall/SpottedShroom.
+We're in a sort of feature freeze at the moment, and hopefully we'll have
+an official release out by mid-week.  <em>(Note: the previous "unofficial"
+versions linked on here have some issues with creating map files which
+Eschalon can't read.  This is only for "New" maps.  Loading and editing
+savegame map files were fine.)</em>
+<em>(Last update on this page: March 31, 2014)</em></p>
 </blockquote>
 
 <h3>Disclaimer</h3>
@@ -93,10 +95,11 @@ Hm, I believe these should all be taken care of.
 -->
 
 <blockquote>
+<!--
 <p><a href="http://dx4.org/eschalon_utils/eschalon_utils_setup.exe">Unofficial pre-release (Windows)</a></p>
 
 <p><a href="http://dx4.org/eschalon_utils/Eschalon%20Utils.dmg">Unofficial pre-release (Mac OS X)</a></p>
-
+-->
 <p><a href="dist/eschalon_utils-0.8.1/ChangeLog.txt">ChangeLog</a></p>
 <strong>Current:</strong>
 <ul>
