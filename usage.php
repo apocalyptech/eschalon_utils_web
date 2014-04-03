@@ -296,42 +296,4 @@ are just two possible tiles per group).
 
 </blockquote>
 
-<!--
-All fixed, I believe...
-<h3><a name="issues"></a>Known Issues on Windows (Map Editor)</h3>
-
-<blockquote>
-<p>There are two known bugs when running the map editor on Windows,
-neither of which
-are terribly dire (and don't affect Linux).</p>
-
-<ol>
-<li><p>The "Hive Queen" graphic doesn't get loaded properly on the tile
-editing window, in the "Entity" tab.  It does load properly into the
-main map itself, though.  It turns out that this is a bug somewhere in
-gtk+/GDK but has been fixed sometime over the past year.  The gtk+ build
-available from the gladewin32 project (which is where I recommend people
-install gtk+ from) is over a year old and doesn't have the fix.  You can
-install gtk+ from the official bundle, which would fix this problem, but
-that's more work and isn't
-really worth it.  Once the gladewin32 project updates their files, this
-issue should go away.</p>
-</li>
-<li>There's a bug in PyCairo's
-<tt>cairo.ImageSurface.create_from_png()</tt> which can potentially clobber memory
-and lead to a crash of the program.  As far as I can tell, this will
-<strong>only</strong> happen when loading a new map, so you shouldn't
-lose any editing because of this.  By the looks of it, you've got to
-have loaded a number of maps before you'll see that crash.  One way to
-reproduce it seems to be to start loading in all the game maps from
-Eschalon's data directory one-by-one in alphabetical order.  The program
-should crash after 20 or so maps, at "gloomful.map."
-<p>This issue's been found by the PyCairo folks, and a fix is in their
-repository, but (as of March 24, 2009) there's no officially-released
-version which includes the fix, yet.</p>
-</li>
-</ol>
-</blockquote>
--->
-
 <? esch_footer(); ?>

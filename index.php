@@ -31,23 +31,10 @@ pretty informative as well.  The app is released under the
 PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 
 <p>
+<strong>Sourcecode:</strong> <a href="https://github.com/apocalyptech/eschalon_utils">Github</a><br>
 <strong>Project Page:</strong> <a href="https://sourceforge.net/projects/eschalonutils/">Sourceforge</a><br>
-<strong>Sourcecode:</strong> <a href="https://github.com/apocalyptech/eschalon_utils">Github</a>
 <span class="smalltext">(Full sourcecode is also included in the zip/tgz archives)</span>
 </p>
-</blockquote>
-
-<h3>A Note about Book III Support</h3>
-
-<blockquote>
-<p>Book III support should be forthcoming in the week of March 31st.  Support
-is available in github, mostly thanks to Elliot Kendall/SpottedShroom.
-We're in a sort of feature freeze at the moment, and hopefully we'll have
-an official release out by mid-week.  <em>(Note: the previous "unofficial"
-versions linked on here have some issues with creating map files which
-Eschalon can't read.  This is only for "New" maps.  Loading and editing
-savegame map files were fine.)</em>
-<em>(Last update on this page: March 31, 2014)</em></p>
 </blockquote>
 
 <h3>Disclaimer</h3>
@@ -89,25 +76,17 @@ thing and respect
 
 <h3>Download</h3>
 
-<!--
-Hm, I believe these should all be taken care of.
-<span class="smalltext"><a href="usage.php#issues">Known Issues</a></span>
--->
-
 <blockquote>
-<!--
-<p><a href="http://dx4.org/eschalon_utils/eschalon_utils_setup.exe">Unofficial pre-release (Windows)</a></p>
 
-<p><a href="http://dx4.org/eschalon_utils/Eschalon%20Utils.dmg">Unofficial pre-release (Mac OS X)</a></p>
--->
-<p><a href="dist/eschalon_utils-0.8.1/ChangeLog.txt">ChangeLog</a></p>
+<p><a href="dist/eschalon_utils-current/ChangeLog.txt">ChangeLog</a></p>
 <strong>Current:</strong>
 <ul>
-<? esch_rel('0.8.1', 'February 6, 2012', true); ?>
+<? esch_rel('1.0.0', 'April 2, 2014', true); ?>
 </ul>
 <p>
 <strong>Previous Versions:</strong>
 <ul>
+<? esch_rel('0.8.1', 'February 6, 2012'); ?>
 <? esch_rel('0.8.0', 'February 6, 2012'); ?>
 <? esch_rel('0.7.5', 'August 24, 2010'); ?>
 <? esch_rel('0.7.4', 'August 23, 2010'); ?>
@@ -150,6 +129,7 @@ screenshots)</em></li>
 <ul>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9211">The Mystery of Rockhammer Mine</a>, by MyGameCompany</li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9263">Small Dungeons - Rockhammer</a>, by Weird Heather</li>
 </ul>
 </blockquote>
 
