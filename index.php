@@ -31,7 +31,7 @@ pretty informative as well.  The app is released under the
 PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 
 <p>
-<strong>Sourcecode:</strong> <a href="https://github.com/apocalyptech/eschalon_utils">Github</a><br>
+<strong>Sourcecode, Bug Tracker:</strong> <a href="https://github.com/apocalyptech/eschalon_utils">Github</a><br>
 <strong>Project Page:</strong> <a href="https://sourceforge.net/projects/eschalonutils/">Sourceforge</a><br>
 <span class="smalltext">(Full sourcecode is also included in the zip/tgz archives)</span>
 </p>
@@ -81,7 +81,16 @@ thing and respect
 <p><a href="dist/eschalon_utils-current/ChangeLog.txt">ChangeLog</a></p>
 <strong>Current:</strong>
 <ul>
-<? esch_rel('1.0.0', 'April 2, 2014', true); ?>
+<? esch_rel_2014('1.0.0', 'April 2, 2014',
+    array('0ead5d5e2157080f6b22e40477d3649dc6a1a836',
+        'ef2708ae78ae8786bfc648b3b20234f97546bd3236749780a5622eff68e28105'),
+    array('acd0861500b4b61131240063f8a9c327cb69064f',
+        'edc759b9eebd3e6660d40e02abbab82152d95306c181047b9614547ae56b6c13'),
+    array('ef5df32c1e891c11b8c223b60404b392e8cf9b16',
+        'b4a361b360acc77992f5ceb0fdd39244a4573578a825de357d71410f64159f73'),
+    null,
+    true);
+?>
 </ul>
 <p>
 <strong>Previous Versions:</strong>
@@ -127,8 +136,8 @@ screenshots)</em></li>
 </ul>
 <p><strong>Book III</strong></p>
 <ul>
-<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9211">The Mystery of Rockhammer Mine</a>, by MyGameCompany</li>
-<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=26&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9211">The Mystery of Rockhammer Mine</a>, by MyGameCompany</li>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9263">Small Dungeons - Rockhammer</a>, by Weird Heather</li>
 </ul>
 </blockquote>
@@ -153,7 +162,7 @@ Feel free to email me at <a href="mailto:pez@apocalyptech.com?subject=Eschalon B
  if you've got questions or concerns.  I'm also logged in to
 <a href="http://freenode.net/irc_servers.shtml">irc.freenode.net</a>
 as the user "sekhmet" if you'd prefer that.
-Alternatively, <a href="http://basiliskgames.com/forums/viewtopic.php?f=3&amp;t=1809">here's a thread at the Basilisk Forums</a> which I watch.
+Alternatively, <a href="http://basiliskgames.com/forums/viewtopic.php?f=34&amp;t=9276">here's a thread at the Basilisk Forums</a> which I watch.
 </p>
 </blockquote>
 

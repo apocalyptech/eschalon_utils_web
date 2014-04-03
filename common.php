@@ -138,6 +138,64 @@ function esch_footer()
 	print '</body></html>';
 }
 
+function print_sums($sums)
+{
+    printf("<blockquote class=\"checksums\">\n");
+    printf("sha1sum: <tt>%s</tt><br>\n", $sums[0]);
+    printf("sha256sum: <tt>%s</tt><br>\n", $sums[1]);
+    printf("</blockquote>\n");
+}
+
+function esch_rel_2014($ver, $date,
+    $tgz_sums=null,
+    $zip_sums=null,
+    $exe_sums=null,
+    $dmg_sums=null,
+    $current=false)
+{
+    $exe_ver = str_replace('.', '_', $ver);
+    if (!$current)
+    {
+        printf('<li>');
+    }
+    printf("<p><b>%s</b> - released %s</p>\n", $ver, $date);
+    printf("<blockquote>\n");
+    if (!is_null($exe_sums))
+    {
+        printf("Windows EXE: <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils_%s_setup.exe/download\">eschalon_utils_%s_setup.exe</a><br>", $ver, $exe_ver, $exe_ver);
+        print_sums($exe_sums);
+    }
+    if (!is_null($tgz_sums))
+    {
+        printf("Unix/Mac/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a>", $ver, $ver, $ver);
+        print_sums($tgz_sums);
+    }
+    if (!is_null($dmg_sums))
+    {
+        // Nothing yet, but do something similar
+    }
+    if (!is_null($zip_sums))
+    {
+        printf("Other (zipfile): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.zip/download\">eschalon_utils-%s.zip</a> ", $ver, $ver, $ver);
+        print_sums($zip_sums);
+    }
+    if ($current)
+    {
+        ?>
+        <span class="smalltext">
+        <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
+        work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
+        The Windows EXE is unaffected, as are the character editors, and Book 1 map editing.
+        </span>
+        <?
+    }
+    printf("</blockquote>\n");
+    if (!$current)
+    {
+        printf("</li>\n");
+    }
+}
+
 function esch_rel($ver, $date, $warning=false, $b1_only=false)
 {
     if ($b1_only)

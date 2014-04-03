@@ -115,3 +115,7 @@ ul, ol {
 .spacedol li {
     margin-bottom: .4em;
 }
+.checksums {
+    margin-top: .3em;
+    font-size: .7em;
+}
