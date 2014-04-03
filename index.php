@@ -59,6 +59,15 @@ apparent.</p>
 <h3>Content</h3>
 
 <blockquote>
+<p>This editor is on track to become "officially endorsed" by Basilisk
+Games as the tool to use for mod creation in Eschalon Book III.
+<a href="http://basiliskgames.com/forums/viewtopic.php?f=34&t=9243">This
+forum post</a> details the current state of mod support in Book III version
+1.02.  Right now all the released mods for Books II and III are distributed
+in a "savegame" format, where you start a new game and then copy the mod
+files into your save slot.  The officially-supported modding mechanism will
+involve using "global" map files put into a "mods" directory - see the forum
+post for more information about that.</p>
 <p>If you end up creating new maps for Eschalon, please do the right
 thing and respect
 <a href="http://basiliskgames.com/forums/viewtopic.php?p=35684#p35684">Basilisk Games' wishes</a> in regards to custom content:</p>
@@ -67,55 +76,17 @@ thing and respect
 <li>If you put your content up for download anywhere other than
     <a href="http://basiliskgames.com/forums">the official Basilisk Games
     forums</a>, you need to have a link that jumps back to the
-    <a href="http://basiliskgames.com/eschalon-book-i">Book I page</a> (or
-    presumably the <a href="http://basiliskgames.com/eschalon-book-ii">
-    Book II</a> or <a href="http://basiliskgames.com/eschalon-book-iii">Book
-    III</a> pages for mods to those games).</li>
+    <a href="http://basiliskgames.com/eschalon-book-i">Book I</a>,
+    <a href="http://basiliskgames.com/eschalon-book-ii">Book II</a>,
+    or <a href="http://basiliskgames.com/eschalon-book-iii">Book III</a>
+    pages, as appropriate.</li>
 </ol>
 </blockquote>
 
 <h3>Download</h3>
 
 <blockquote>
-
-<p><a href="dist/eschalon_utils-current/ChangeLog.txt">ChangeLog</a></p>
-<strong>Current:</strong>
-<ul>
-<? esch_rel_2014('1.0.0', 'April 2, 2014',
-    array('0ead5d5e2157080f6b22e40477d3649dc6a1a836',
-        'ef2708ae78ae8786bfc648b3b20234f97546bd3236749780a5622eff68e28105'),
-    array('acd0861500b4b61131240063f8a9c327cb69064f',
-        'edc759b9eebd3e6660d40e02abbab82152d95306c181047b9614547ae56b6c13'),
-    array('ef5df32c1e891c11b8c223b60404b392e8cf9b16',
-        'b4a361b360acc77992f5ceb0fdd39244a4573578a825de357d71410f64159f73'),
-    null,
-    true);
-?>
-</ul>
-<p>
-<strong>Previous Versions:</strong>
-<ul>
-<? esch_rel('0.8.1', 'February 6, 2012'); ?>
-<? esch_rel('0.8.0', 'February 6, 2012'); ?>
-<? esch_rel('0.7.5', 'August 24, 2010'); ?>
-<? esch_rel('0.7.4', 'August 23, 2010'); ?>
-<? esch_rel('0.7.3', 'August 23, 2010'); ?>
-<? esch_rel('0.7.2', 'August 20, 2010'); ?>
-<? esch_rel('0.7.1', 'August 17, 2010'); ?>
-<? esch_rel('0.7.0', 'August 16, 2010'); ?>
-<? esch_rel('0.6.3', 'July 9, 2010'); ?>
-<? esch_rel('0.6.2', 'July 1, 2010'); ?>
-<? esch_rel('0.6.1', 'June 14, 2010'); ?>
-<? esch_rel('0.6.0', 'June 12, 2010'); ?>
-<? esch_rel('0.5.0', 'May 31, 2010', false, true); ?>
-<? esch_rel_old('0.4.2', 'April 3, 2009'); ?>
-<? esch_rel_old('0.4.1', 'April 3, 2009'); ?>
-<? esch_rel_old('0.4.0', 'March 21, 2009'); ?>
-<? esch_rel_old('0.3.1', 'February 19, 2009'); ?>
-<? esch_rel_old('0.3.0', 'October 29, 2008',  'char'); ?>
-<li>v0.2.0 - <a href="http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_0.2.0/eschalon_b1_char-0.2.0.tgz/download">tgz</a> <span class="smalltext">(Unix/Mac/Win)</span> - August 21, 2008</li>
-<li>v0.1.0 - August 21, 2008</li>
-</ul>
+<? include('releases.php'); ?>
 </blockquote>
 
 <h3>Known Eschalon Mods</h3>

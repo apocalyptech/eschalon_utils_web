@@ -3,6 +3,7 @@
 
 $links = array(
     array('index.php', 'Main'),
+    array('download.php', 'Download'),
     array('installation.php', 'Installation'),
     array('usage.php', 'Usage'),
     array('map.php', 'Map/Script Information'),
