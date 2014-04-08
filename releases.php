@@ -13,7 +13,8 @@ require_once('common.php');
         'edc759b9eebd3e6660d40e02abbab82152d95306c181047b9614547ae56b6c13'),
     array('ef5df32c1e891c11b8c223b60404b392e8cf9b16',
         'b4a361b360acc77992f5ceb0fdd39244a4573578a825de357d71410f64159f73'),
-    null,
+    array('187aabc5277e3472346fdc0bbfa34bb27e841627',
+        '466658a73173f12f8e02d5ed67de04c37e639fc6527941b0d1787ed9f961a902'),
     true);
 ?>
 </ul>

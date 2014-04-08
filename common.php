@@ -173,7 +173,8 @@ function esch_rel_2014($ver, $date,
     }
     if (!is_null($dmg_sums))
     {
-        // Nothing yet, but do something similar
+        printf("OSX (dmg): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/Eschalon%%20Utils%%20%s.dmg/download\">Eschalon Utils %s.dmg</a>", $ver, $ver, $ver);
+        print_sums($dmg_sums);
     }
     if (!is_null($zip_sums))
     {
@@ -183,7 +184,6 @@ function esch_rel_2014($ver, $date,
     if ($current)
     {
         ?>
-        <p>A "native" OSX .dmg image is forthcoming.</p>
         <span class="smalltext">
         <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
         work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
