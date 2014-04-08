@@ -168,7 +168,7 @@ function esch_rel_2014($ver, $date,
     }
     if (!is_null($tgz_sums))
     {
-        printf("Unix/Mac/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a>", $ver, $ver, $ver);
+        printf("Linux/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a>", $ver, $ver, $ver);
         print_sums($tgz_sums);
     }
     if (!is_null($dmg_sums))
