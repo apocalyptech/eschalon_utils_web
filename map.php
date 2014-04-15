@@ -258,7 +258,7 @@ sometimes they do.
 <li><strong>17</strong> - Archery Target</li>
 <li><strong>18</strong> - Nests / Computer Terminals</li>
 <li><strong>19</strong> - Zapper <em>(electric field)</em></li>
-<li><strong>21</strong> - "Huge" Graphics <em>(Hammerlorne Entrance, Docked Ships, etc)</em></li>
+<li><strong>21</strong> - "Big" Graphics <em>(Hammerlorne Entrance, Docked Ships, etc)</em></li>
 <li><strong>25</strong> - Light Source <em>(white)</em></li>
 <li><strong>26</strong> - Light Source <em>(red)</em></li>
 <li><strong>27</strong> - Light Source <em>(green)</em></li>
@@ -300,12 +300,17 @@ occasionally in various objects' script text.  The game has
 a somewhat odd notation - the coordinate pair (56, 129) would become "12956".
 The coordinate pair (3, 40) would become "4003".  It's a bit counterintuitive
 but it does work well since the x coordinate can be at most 99.</p>
-<p>In Book 2, an object type of 21 is a "Huge" graphic, such as the main
+<p>In Books 2 and 3, an object type of 21 is a "Big" graphic, such as the main
 (impassable) Hammerlorne Entrance, and the docked ships.  It's also used for
-a couple smaller images like wagons.  Note that on these tiles, the wall type
-<strong>must</strong> be set to 1000, and the "Extra Text" section in the
-Object will be the filename of the graphic to load (which must reside inside
-the datapak).</p>
+a couple smaller images like wagons.  Tiles with a Big Graphic object must
+also have a Wall Image ID of 1000, 1001, 1002, or 1003, and that wall ID will
+get associated with the filename specified by the "Extra Text" section of
+the Object.  From that point on, the engine will only look at the Wall ID
+to determine which graphic to draw, so there can only be four unique Big
+Graphic objects on any given map.  You can place multiple instances of the
+same graphic by reusing its ID.  For instance, in Oceana Lowlands in Book III,
+there are multiple <tt>sgfx_raft.png</tt> objects which all share the Wall
+ID 1000.</p>
 <p>If the "Lock Level" on a container or door is set to zero, then the
 container isn't locked.  Lock levels work a little differently between books
 1 and 2.  In Book 1, a Lock Level of 1 is the weakest lock, and a Lock
