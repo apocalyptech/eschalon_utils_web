@@ -155,11 +155,15 @@ function esch_rel_2014($ver, $date,
     $current=false)
 {
     $exe_ver = str_replace('.', '_', $ver);
-    if (!$current)
+    if ($current)
+    {
+        printf("<p><b>%s</b> - released %s</p>\n", $ver, $date);
+    }
+    else
     {
         printf('<li>');
+        printf("<p>v%s - released %s</p>\n", $ver, $date);
     }
-    printf("<p><b>%s</b> - released %s</p>\n", $ver, $date);
     printf("<blockquote>\n");
     if (!is_null($exe_sums))
     {
