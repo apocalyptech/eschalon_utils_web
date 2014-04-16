@@ -86,7 +86,10 @@ thing and respect
 <h3>Download</h3>
 
 <blockquote>
-<? include('releases.php'); ?>
+<p><a href="dist/eschalon_utils-current/ChangeLog.txt">ChangeLog</a></p>
+<ul>
+<?php esch_show_current_release(); ?>
+</ul>
 </blockquote>
 
 <h3>Known Eschalon Mods</h3>
