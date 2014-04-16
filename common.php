@@ -249,7 +249,6 @@ function esch_rel_old($ver, $date, $progname='utils')
 
 function esch_show_current_release()
 {
-    /*
     esch_rel_2014('1.0.1', 'April 15, 2014',
         array('886d07e95d1ac42bb654542c9dbcb880e58d0fea',
           '25209e14b903699bdbdcfe7c66d823feaa861b0142a802d8ca9bd61018f9e090'),
@@ -257,10 +256,14 @@ function esch_show_current_release()
           'f6f0896c2a3824cd079f64fba37781c39f3afb845c723bf0a1ca00ebb00c8d73'),
         array('ddd3225b4ddcc5e601bb46cf1223ad2ab5c66c27',
           'fe5b2ce7cc191b87f0b637320c87eb3efaae9d8cd72efe7abac28002176869e8'),
-        null,
+        array('fd183f64835b9741ea69cf62b3cc1d035804044a',
+          '66bbae2c526314e29704448e5ad97c730bd227572eedc97aeedf10f7d84decaf'),
         true);
-    */
+}
 
+function esch_show_previous_releases()
+{
+    print "<ul>\n";
     esch_rel_2014('1.0.0', 'April 2, 2014',
         array('0ead5d5e2157080f6b22e40477d3649dc6a1a836',
           'ef2708ae78ae8786bfc648b3b20234f97546bd3236749780a5622eff68e28105'),
@@ -270,12 +273,7 @@ function esch_show_current_release()
           'b4a361b360acc77992f5ceb0fdd39244a4573578a825de357d71410f64159f73'),
         array('187aabc5277e3472346fdc0bbfa34bb27e841627',
           '466658a73173f12f8e02d5ed67de04c37e639fc6527941b0d1787ed9f961a902'),
-        true);
-}
-
-function esch_show_previous_releases()
-{
-    print "<ul>\n";
+        false);
     esch_rel('0.8.1', 'February 6, 2012');
     esch_rel('0.8.0', 'February 6, 2012');
     esch_rel('0.7.5', 'August 24, 2010');
