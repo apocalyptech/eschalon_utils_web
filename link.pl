@@ -17,10 +17,10 @@ $winver =~ s/\./_/g;
 
 chdir 'dist';
 system('rm', 'eschalon_utils-current');
-system('rm', 'eschalon_utils-current.tar.gz');
-system('rm', 'eschalon_utils-current.zip');
-system('rm', 'eschalon_utils_current_setup.exe');
+#system('rm', 'eschalon_utils-current.tar.gz');
+#system('rm', 'eschalon_utils-current.zip');
+#system('rm', 'eschalon_utils_current_setup.exe');
 system('ln', '-s', 'eschalon_utils-' . $ver, 'eschalon_utils-current');
-system('ln', '-s', 'eschalon_utils-' . $ver . '.tar.gz', 'eschalon_utils-current.tar.gz');
-system('ln', '-s', 'eschalon_utils-' . $ver . '.zip', 'eschalon_utils-current.zip');
-system('ln', '-s', 'eschalon_utils_' . $winver . '_setup.exe', 'eschalon_utils_current_setup.exe');
+#system('ln', '-s', 'eschalon_utils-' . $ver . '.tar.gz', 'eschalon_utils-current.tar.gz');
+#system('ln', '-s', 'eschalon_utils-' . $ver . '.zip', 'eschalon_utils-current.zip');
+#system('ln', '-s', 'eschalon_utils_' . $winver . '_setup.exe', 'eschalon_utils_current_setup.exe');
