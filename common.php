@@ -167,27 +167,29 @@ function esch_rel_2014($ver, $date,
     printf("<blockquote>\n");
     if (!is_null($exe_sums))
     {
-        printf("Windows EXE: <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils_%s_setup.exe/download\">eschalon_utils_%s_setup.exe</a><br>", $ver, $exe_ver, $exe_ver);
+        printf("Windows EXE: <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils_%s_setup.exe/download\">eschalon_utils_%s_setup.exe</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils_%s_setup.exe.asc\">sig</a>)<br>", $ver, $exe_ver, $exe_ver, $exe_ver);
         if ($current) { print_sums($exe_sums); }
     }
     if (!is_null($tgz_sums))
     {
-        printf("Linux/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a><br>", $ver, $ver, $ver);
+        printf("Linux/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.tar.gz.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
         if ($current) { print_sums($tgz_sums); }
     }
     if (!is_null($dmg_sums))
     {
-        printf("OSX (dmg): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/Eschalon%%20Utils%%20%s.dmg/download\">Eschalon Utils %s.dmg</a><br>", $ver, $ver, $ver);
+        printf("OSX (dmg): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/Eschalon%%20Utils%%20%s.dmg/download\">Eschalon Utils %s.dmg</a> (<a href=\"http://apocalyptech.com/eschalon/dist/Eschalon%%20Utils%%20%s.dmg.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
         if ($current) { print_sums($dmg_sums); }
     }
     if (!is_null($zip_sums))
     {
-        printf("Other (zipfile): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.zip/download\">eschalon_utils-%s.zip</a> ", $ver, $ver, $ver);
+        printf("Other (zipfile): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.zip/download\">eschalon_utils-%s.zip</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.zip.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
         if ($current) { print_sums($zip_sums); }
     }
+    printf("Signed sha256 checksums: <a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s-sha256sum.txt.asc\">eschalon_utils-%s-sha256sum.txt.asc</a><br>", $ver, $ver, $ver, $ver);
     if ($current)
     {
         ?>
+        <br>
         <span class="smalltext">
         <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
         work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
