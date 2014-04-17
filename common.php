@@ -189,7 +189,8 @@ function esch_rel_2014($ver, $date,
     if ($current)
     {
         ?>
-        <br>
+        <p><span class="smalltext"><i>(Releases signed by
+        <a href="http://pgp.mit.edu/pks/lookup?op=vindex&search=0x7737E0EBB4ABC956">B4ABC956</a>)</p>
         <span class="smalltext">
         <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
         work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
