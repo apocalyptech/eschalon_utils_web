@@ -114,6 +114,7 @@ screenshots)</em></li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9015">Alchemist's Tower in Moonrise</a>, by Weird Heather</li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9263">Small Dungeons - Rockhammer</a>, by Weird Heather</li>
 <li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9289">Expedition into West Mirkland</a>, by MyGameCompany</li>
+<li><a href="http://www.basiliskgames.com/forums/viewtopic.php?f=34&t=9333">The Sanctum</a>, by SpottedShroom</li>
 </ul>
 </blockquote>
 
