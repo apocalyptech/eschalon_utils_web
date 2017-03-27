@@ -12,7 +12,7 @@ the EXE or DMG version.  That's all that you need to download, and you can
 safely ignore the rest of this page.</p>
 <p>For other systems, or if you want to run the
 source directly in Windows/OS X, you'll need: <a href="http://www.gtk.org/">gtk+</a>,
-<a href="http://python.org/">Python</a>,
+<a href="http://python.org/">Python 2</a>,
 <a href="http://cairographics.org/">Cairo</a>/<a href="http://cairographics.org/pycairo/">PyCairo</a>, and
 <a href="http://www.pygtk.org/">PyGTK</a>.
 For Linux users, these are certainly available from your distribution, and

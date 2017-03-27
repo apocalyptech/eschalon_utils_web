@@ -27,14 +27,19 @@ still, which is quite a bit.  The
 pretty informative as well.  The app is released under the
 <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU GPL 2.0</a>.</p>
 
-<p>The apps were developed on Linux, and they use Python, GTK+, Cairo, and
+<p>The apps were developed on Linux, and they use Python 2, GTK+, Cairo, and
 PyGTK to do its stuff.  It works on Windows and Mac OS X as well.</p>
 
 <p>
 <strong>Sourcecode, Bug Tracker:</strong> <a href="https://github.com/apocalyptech/eschalon_utils">Github</a><br>
-<strong>Project Page:</strong> <a href="https://sourceforge.net/projects/eschalonutils/">Sourceforge</a><br>
 <span class="smalltext">(Full sourcecode is also included in the zip/tgz archives)</span>
 </p>
+
+<p>The Eschalon Savefile Editor used to utilize a
+<a href="https://sourceforge.net/projects/eschalonutils/">project page on
+Sourceforge.net</a> as its primary file distribution endpoint, but that
+page has been effectively shut down now.</p>
+
 </blockquote>
 
 <h3>Disclaimer</h3>

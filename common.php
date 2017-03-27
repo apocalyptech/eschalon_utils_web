@@ -167,22 +167,22 @@ function esch_rel_2014($ver, $date,
     printf("<blockquote>\n");
     if (!is_null($exe_sums))
     {
-        printf("Windows EXE: <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils_%s_setup.exe/download\">eschalon_utils_%s_setup.exe</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils_%s_setup.exe.asc\">sig</a>)<br>", $ver, $exe_ver, $exe_ver, $exe_ver);
+        printf("Windows EXE: <a href=\"dist/eschalon_utils_%s_setup.exe\">eschalon_utils_%s_setup.exe</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils_%s_setup.exe.asc\">sig</a>)<br>", $exe_ver, $exe_ver, $exe_ver);
         if ($current) { print_sums($exe_sums); }
     }
     if (!is_null($tgz_sums))
     {
-        printf("Linux/Source (tgz): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.tar.gz/download\">eschalon_utils-%s.tar.gz</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.tar.gz.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
+        printf("Linux/Source (tgz): <a href=\"dist/eschalon_utils-%s.tar.gz\">eschalon_utils-%s.tar.gz</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.tar.gz.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($tgz_sums); }
     }
     if (!is_null($dmg_sums))
     {
-        printf("OSX (dmg): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/Eschalon%%20Utils%%20%s.dmg/download\">Eschalon Utils %s.dmg</a> (<a href=\"http://apocalyptech.com/eschalon/dist/Eschalon%%20Utils%%20%s.dmg.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
+        printf("OSX (dmg): <a href=\"dist/Eschalon%%20Utils%%20%s.dmg\">Eschalon Utils %s.dmg</a> (<a href=\"http://apocalyptech.com/eschalon/dist/Eschalon%%20Utils%%20%s.dmg.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($dmg_sums); }
     }
     if (!is_null($zip_sums))
     {
-        printf("Other (zipfile): <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_utils-%s.zip/download\">eschalon_utils-%s.zip</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.zip.asc\">sig</a>)<br>", $ver, $ver, $ver, $ver);
+        printf("Other (zipfile): <a href=\"dist/eschalon_utils-%s.zip\">eschalon_utils-%s.zip</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.zip.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($zip_sums); }
     }
     printf("Signed sha256 checksums: <a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s-sha256sum.txt.asc\">eschalon_utils-%s-sha256sum.txt.asc</a><br>", $ver, $ver, $ver, $ver);
@@ -217,10 +217,10 @@ function esch_rel($ver, $date, $warning=false, $b1_only=false)
     }
     $exe_ver = str_replace('.', '_', $ver);
     printf("<li>v%s - \n", $ver);
-    printf("    <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon%s_utils-%s.tar.gz/download\">tgz</a>", $ver, $extratext, $ver);
-    printf("/<a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon%s_utils-%s.zip/download\">zip</a> ", $ver, $extratext, $ver);
+    printf("    <a href=\"dist/eschalon%s_utils-%s.tar.gz\">tgz</a>", $extratext, $ver);
+    printf("/<a href=\"dist/eschalon%s_utils-%s.zip\">zip</a> ", $extratext, $ver);
     printf("<span class=\"smalltext\">(Unix/Mac/Source)</span> - \n");
-    printf("    <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon%s_utils_%s_setup.exe/download\">exe</a> ", $ver, $extratext, $exe_ver);
+    printf("    <a href=\"dist/eschalon%s_utils_%s_setup.exe\">exe</a> ", $extratext, $exe_ver);
     printf("<span class=\"smalltext\">(Win)</span> - %s<br>\n", $date);
     if ($warning)
     {
@@ -246,9 +246,9 @@ function esch_rel_old($ver, $date, $progname='utils')
         $ext = 'tgz';
     }
     printf("<li>v%s - \n", $ver);
-    printf("    <a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_b1_%s-%s.%s/download\">tgz</a> ", $ver, $progname, $ver, $ext);
+    printf("    <a href=\"dist/eschalon_b1_%s-%s.%s\">tgz</a> ", $progname, $ver, $ext);
     printf("<span class=\"smalltext\">(Unix/Mac)</span> - \n");
-    printf("<a href=\"http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_%s/eschalon_b1_%s-%s.zip/download\">zip</a> ", $ver, $progname, $ver);
+    printf("<a href=\"dist/eschalon_b1_%s-%s.zip\">zip</a> ", $progname, $ver);
     printf("<span class=\"smalltext\">(Win)</span> - \n");
     printf("%s\n", $date);
     printf("</li>\n");
@@ -300,7 +300,7 @@ function esch_show_previous_releases()
     esch_rel_old('0.3.1', 'February 19, 2009');
     esch_rel_old('0.3.0', 'October 29, 2008',  'char');
     ?>
-    <li>v0.2.0 - <a href="http://sourceforge.net/projects/eschalonutils/files/eschalon_utils_0.2.0/eschalon_b1_char-0.2.0.tgz/download">tgz</a> <span class="smalltext">(Unix/Mac/Win)</span> - August 21, 2008</li>
+    <li>v0.2.0 - <a href="dist/eschalon_b1_char-0.2.0.tgz">tgz</a> <span class="smalltext">(Unix/Mac/Win)</span> - August 21, 2008</li>
     <li>v0.1.0 - August 21, 2008</li>
     </ul>
     <?php
