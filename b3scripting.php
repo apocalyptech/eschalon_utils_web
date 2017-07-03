@@ -1,7 +1,8 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Book 3 Scripting Notes');
+$page->set_title('Book 3 Scripting Notes');
+$page->apoc_header();
 ?>
 
 <p>
@@ -62,12 +63,12 @@ something.</p>
 Books 1, 2, and/or 3, they might behave slightly differently, or have
 different arguments.</p>
 
-<h3>General-Purpose Commands</h3>
+<h2>General-Purpose Commands</h2>
 <blockquote>
 
 <p>These are commands which should theoretically be valid anywhere.</p>
 
-<h4>Quest-Related</h4>
+<h3>Quest-Related</h3>
 <blockquote>
 <p>Each quest has a number in Book 3 - the main quests are numbered 1 through 30, and
 there are other internal flags the game uses which are technically numbered as
@@ -117,7 +118,7 @@ List all the quests and their status
 </dl>
 </blockquote>
 
-<h4>Conditional Statements</h4>
+<h3>Conditional Statements</h3>
 
 <blockquote>
 <p>These are used to conditionally execute scripts.  All of these will abort
@@ -229,7 +230,7 @@ seen in the game is <tt>zap</tt>.
 </dl>
 </blockquote>
 
-<h4>Interactions with the Player</h4>
+<h3>Interactions with the Player</h3>
 <blockquote>
 <dl>
 
@@ -486,7 +487,7 @@ in the initial dialog, and does not have to match any existing NPC.
 </dl>
 </blockquote>
 
-<h4>Interactions with the Map</h4>
+<h3>Interactions with the Map</h3>
 
 <blockquote>
 
@@ -655,7 +656,7 @@ MP to go below zero.
 </dl>
 </blockquote>
 
-<h4>Other Commands</h4>
+<h3>Other Commands</h3>
 
 <blockquote>
 <dl>
@@ -991,7 +992,7 @@ expire, etc.
 
 </blockquote>
 
-<h3>Usually Only Used in Entity Scripts</h3>
+<h2>Usually Only Used in Entity Scripts</h2>
 
 <blockquote>
 
@@ -1023,7 +1024,7 @@ armor, gold).
 
 </blockquote>
 
-<h3>Only Used in Item Scripts</h3>
+<h2>Only Used in Item Scripts</h2>
 
 <blockquote>
 
@@ -1098,7 +1099,7 @@ Used on waterskins
 </dl>
 </blockquote>
 
-<h3>Only Used in Tiles/Squares</h3>
+<h2>Only Used in Tiles/Squares</h2>
 
 <blockquote>
 
@@ -1116,4 +1117,4 @@ a toggle switch.)
 </dl>
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

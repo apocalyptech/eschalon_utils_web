@@ -1,10 +1,11 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Installation');
+$page->set_title('Installation');
+$page->apoc_header();
 ?>
 
-<h3>General Installation Notes</h3>
+<h2>General Installation Notes</h2>
 
 <blockquote>
 <p>First off, if you're on Windows or Mac OS X, just go ahead and download
@@ -63,7 +64,7 @@ default to.</p>
 
 </blockquote>
 
-<h3>Linux Specifics</h3>
+<h2>Linux Specifics</h2>
 
 <blockquote>
 <p>What I'd recommend is just leaving it untarred wherever you untarred it, and make
@@ -91,7 +92,7 @@ requirement, but allow you to continue regardless.</p>
 
 </blockquote>
 
-<h3>Windows Specifics</h3>
+<h2>Windows Specifics</h2>
 
 <blockquote>
 
@@ -138,7 +139,7 @@ Book 2 equivalents, from wherever you unzipped the archive),
 and it'll open up an "Open" dialog.</p>
 </blockquote>
 
-<h3>OS X Specifics</h3>
+<h2>OS X Specifics</h2>
 
 <blockquote>
 <a name="osx"></a>
@@ -197,4 +198,4 @@ to run this command:
 
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

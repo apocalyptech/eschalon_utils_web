@@ -1,10 +1,11 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Usage');
+$page->set_title('Usage');
+$page->apoc_header();
 ?>
 
-<h3>Character Editor Usage</h3>
+<h2>Character Editor Usage</h2>
 
 <blockquote>
 <p>Usage of the character editor should be mostly self-explanatory, so
@@ -36,14 +37,14 @@ having to install Python on your system - the CLI doesn't use GTK/Cairo/PyGTK,
 etc.</p>
 </blockquote>
 
-<h3>Map Editor Usage</h3>
+<h2>Map Editor Usage</h2>
 
 <blockquote>
 <p>The map editor should be pretty straightforward, though I've made
 <a href="map.php">some notes on mapping</a> which you should probably
 look over if you want to start making changes to maps.</p>
 
-<h4>Controls</h4>
+<h3>Controls</h3>
 
 <blockquote>
 <p><img src="map_control.png" alt="Editor Controls"></p>
@@ -86,7 +87,7 @@ At any time while editing you can press <tt>e</tt>, <tt>m</tt>
 <tt>d</tt>, <tt>r</tt>, or <tt>o</tt> to immediately activate any of those modes.</p>
 </blockquote>
 
-<h4>Draw Menu</h4>
+<h3>Draw Menu</h3>
 
 <blockquote>
 
@@ -113,7 +114,7 @@ properly.  Especially when you're browsing off in Crakamir, the "Trees"
 filter doesn't really do a whole lot.  That'll get fixed eventually.</p>
 </blockquote>
 
-<h4>Highlight Menu</h4>
+<h3>Highlight Menu</h3>
 
 <blockquote>
 
@@ -142,7 +143,7 @@ friendly entities in green.</p>
 on the right</span></p>
 </blockquote>
 
-<h4>Drawing</h4>
+<h3>Drawing</h3>
 
 <blockquote>
 <p><img src="map_draw_walls.png" alt="Drawing Controls"></p>
@@ -164,7 +165,7 @@ end up wanting to do something like this:</p>
 </p>
 </blockquote>
 
-<h4>Erasing</h4>
+<h3>Erasing</h3>
 
 <blockquote>
 <p><img src="map_erase_walls.png" alt="Erasing Options"></p>
@@ -178,7 +179,7 @@ allowed to walk.  The "Entities" and "Objects" buttons will be available
 only if you have Entity or Object highlighting on.</p>
 </blockquote>
 
-<h4>Placing Objects</h4>
+<h3>Placing Objects</h3>
 
 <blockquote>
 <p><img src="map_place_object.png" alt="Placing Objects"></p>
@@ -192,7 +193,7 @@ the "direction" of the object.  For example, the "Sconce /" would fit on a
 wall which runs from the southwest to northeast.</p>
 </blockquote>
 
-<h4>Smart Drawing</h4>
+<h3>Smart Drawing</h3>
 
 <blockquote>
 <p><img src="map_smartdraw.png" alt="Smartdraw Options"></p>
@@ -296,4 +297,4 @@ are just two possible tiles per group).
 
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

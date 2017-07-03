@@ -1,7 +1,7 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header();
+$page->apoc_header();
 ?>
 
 <p>
@@ -10,7 +10,7 @@ esch_header();
 <a href="screenshots_map.php"><img src="smallmap.jpg" alt="Map Editor Screenshots"></a>
 </p>
 
-<h3>About</h3>
+<h2>About</h2>
 <blockquote>
 <p>This package is a collection of applications which let you edit your
 character and maps in savegames of
@@ -42,7 +42,7 @@ page has been effectively shut down now.</p>
 
 </blockquote>
 
-<h3>Disclaimer</h3>
+<h2>Disclaimer</h2>
 
 <blockquote>
 <p>The app seems stable enough for me, but use your head and keep a backup of
@@ -61,7 +61,7 @@ which has subtle effects on the gameplay which may not be immediately
 apparent.</p>
 </blockquote>
 
-<h3>Content</h3>
+<h2>Content</h2>
 
 <blockquote>
 <p>This editor is on track to become "officially endorsed" by Basilisk
@@ -88,7 +88,7 @@ thing and respect
 </ol>
 </blockquote>
 
-<h3>Download</h3>
+<h2>Download</h2>
 
 <blockquote>
 <p><a href="dist/eschalon_utils-current/ChangeLog.txt">ChangeLog</a></p>
@@ -97,7 +97,7 @@ thing and respect
 </ul>
 </blockquote>
 
-<h3>Known Eschalon Mods</h3>
+<h2>Known Eschalon Mods</h2>
 
 <blockquote>
 <p><strong>Book I</strong></p>
@@ -123,7 +123,7 @@ screenshots)</em></li>
 </ul>
 </blockquote>
 
-<h3>Related</h3>
+<h2>Related</h2>
 
 <blockquote>
 <p>
@@ -135,11 +135,11 @@ app to shame.  &lt;smile&gt;
 </p>
 </blockquote>
 
-<h3>Contact</h3>
+<h2>Contact</h2>
 
 <blockquote>
 <p>
-Feel free to email me at <a href="mailto:pez@apocalyptech.com?subject=Eschalon Book 1 Utilities">pez@apocalyptech.com</a>
+Feel free to email me at <a href="mailto:cj@apocalyptech.com?subject=Eschalon Book 1 Utilities">cj@apocalyptech.com</a>
  if you've got questions or concerns.  I'm also logged in to
 <a href="http://freenode.net/irc_servers.shtml">irc.freenode.net</a>
 as the user "sekhmet" if you'd prefer that.
@@ -147,4 +147,4 @@ Alternatively, <a href="http://basiliskgames.com/forums/viewtopic.php?f=34&amp;t
 </p>
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

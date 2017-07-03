@@ -1,13 +1,14 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Map/Script Information');
+$page->set_title('Map/Script Information');
+$page->apoc_header();
 ?>
 
 <p>Some of how Eschalon's map files are used may not be immediately
 obvious, so I figure I'll enumerate some points here.</p>
 
-<h3>General Information</h3>
+<h2>General Information</h2>
 
 <blockquote>
 <p>Eschalon keeps all its global maps in the "data" directory of the
@@ -145,7 +146,7 @@ map names:
 </table>
 </blockquote>
 
-<h3>Tile Info</h3>
+<h2>Tile Info</h2>
 
 <blockquote>
 <p>There's not much to say about the basic tile attributes, actually.
@@ -164,7 +165,7 @@ like so:</p>
 of restricted-movement wall.</p>
 </blockquote>
 
-<h3>Entity Info</h3>
+<h2>Entity Info</h2>
 
 <blockquote>
 <p>As mentioned above, if you're editing a global map file, you'll
@@ -190,7 +191,7 @@ be attacked, so make sure to give new entities at least 1 health, if you're
 adding to savegame files.</p>
 </blockquote>
 
-<h3>Object Info</h3>
+<h2>Object Info</h2>
 
 <blockquote>
 <p>I used to call these "scripts," and internally my code still refers to
@@ -351,4 +352,4 @@ so containers which specify Random shouldn't have anything but the one
 "Random" item.  A similar "Empty" keyword is defined for Book 2, as well.</p>
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

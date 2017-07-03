@@ -1,53 +1,54 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Map Editor Screenshots');
+$page->set_title('Map Editor Screenshots');
+$page->apoc_header();
 $vers = '0.7.0';
 ?>
 
-<h3>Screenshots, version <?=$vers?></h3>
+<h2>Screenshots, version <?=$vers?></h2>
 
-<h4>Initial View</h4>
+<h3>Initial View</h3>
 <p>
 <img src="screens/<?=$vers?>/map_initial.png" alt="Initial View">
 </p>
 
-<h4>... with Barrier Highlighting</h4>
+<h3>... with Barrier Highlighting</h3>
 <p>
 <img src="screens/<?=$vers?>/map_barrierhighlight.png" alt="Barrier Highlighting">
 </p>
 
-<h4>... Barrier Highlighting with Walls and Trees turned off</h4>
+<h3>... Barrier Highlighting with Walls and Trees turned off</h3>
 <p>
 <img src="screens/<?=$vers?>/map_barrierhighlight_bare.png" alt="Barrier Highlighting, no walls or trees">
 </p>
 
-<h4>... with Object and Entity highlighting</h4>
+<h3>... with Object and Entity highlighting</h3>
 <p>
 <img src="screens/<?=$vers?>/map_script_ent_1.png" alt="Object and Entity Highlighting">
 </p>
 
-<h4>Fully Zoomed In</h4>
+<h3>Fully Zoomed In</h3>
 <p>
 <img src="screens/<?=$vers?>/map_zoom_in.png" alt="Zoomed In">
 </p>
 
-<h4>... and mostly Zoomed Out</h4>
+<h3>... and mostly Zoomed Out</h3>
 <p>
 <img src="screens/<?=$vers?>/map_zoom_out.png" alt="Zoomed Out">
 </p>
 
-<h4>Tile Editing - Main Attributes</h4>
+<h3>Tile Editing - Main Attributes</h3>
 <p>
 <img src="screens/<?=$vers?>/map_square_main.png" alt="Tile Atrributes">
 </p>
 
-<h4>Tile Editing - Graphic Lookup</h4>
+<h3>Tile Editing - Graphic Lookup</h3>
 <p>
 <img src="screens/<?=$vers?>/map_square_gfxlookup.png" alt="Tile Graphic Lookup">
 </p>
 
-<h4>Tile Editing - Entity Attributes</h4>
+<h3>Tile Editing - Entity Attributes</h3>
 <table>
 <tr>
 <td align="center" valign="top">
@@ -61,7 +62,7 @@ Book II<br>
 </tr>
 </table>
 
-<h4><a name="scripts"></a>Tile Editing - Object Info</h4>
+<h3><a name="scripts"></a>Tile Editing - Object Info</h3>
 <table>
 <tr>
 <td align="center" valign="top">
@@ -75,7 +76,7 @@ Book II<br>
 </tr>
 </table>
 
-<h4>Global Map Properties</h4>
+<h3>Global Map Properties</h3>
 <table>
 <tr>
 <td align="center" valign="top">
@@ -89,9 +90,9 @@ Book II<br>
 </tr>
 </table>
 
-<h4>Map Preferences</h4>
+<h3>Map Preferences</h3>
 <p>
 <img src="screens/<?=$vers?>/prefs_2.png" alt="Preferences">
 </p>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

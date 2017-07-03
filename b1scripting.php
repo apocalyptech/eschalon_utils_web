@@ -1,7 +1,8 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header('Book 1 Scripting Notes');
+$page->set_title('Book 1 Scripting Notes');
+$page->apoc_header();
 ?>
 
 <p>
@@ -43,12 +44,12 @@ in yellow</span>.</p>
 both Book 1 and Book 2, they might behave slightly differently, or have
 different arguments.</p>
 
-<h3>General-Purpose Commands</h3>
+<h2>General-Purpose Commands</h2>
 <blockquote>
 
 <p>These are commands which should theoretically be valid anywhere.</p>
 
-<h4>Quest-Related</h4>
+<h3>Quest-Related</h3>
 <blockquote>
 <p>Each quest has a number in Book 1, which I haven't mapped out yet.
 In addition to the main quests, there appear to be some internal flags
@@ -96,7 +97,7 @@ Adds all quests to the player's Quest Journal.
 </dl>
 </blockquote>
 
-<h4>Conditional Statements</h4>
+<h3>Conditional Statements</h3>
 
 <blockquote>
 <p>These are used to conditionally execute scripts.  All of these will abort
@@ -201,7 +202,7 @@ Unknown - has always returned "true" for me.
 </dl>
 </blockquote>
 
-<h4>Interactions with the Player</h4>
+<h3>Interactions with the Player</h3>
 <blockquote>
 <dl>
 
@@ -388,7 +389,7 @@ in the initial dialog, and does not have to match any existing NPC.
 </dl>
 </blockquote>
 
-<h4>Interactions with the Map</h4>
+<h3>Interactions with the Map</h3>
 
 <blockquote>
 
@@ -520,7 +521,7 @@ MP to go below zero.
 </dl>
 </blockquote>
 
-<h4>Other Commands</h4>
+<h3>Other Commands</h3>
 
 <blockquote>
 <dl>
@@ -719,7 +720,7 @@ expire, etc.
 
 </blockquote>
 
-<h3>Usually Only Used in Entity Scripts</h3>
+<h2>Usually Only Used in Entity Scripts</h2>
 
 <blockquote>
 
@@ -745,7 +746,7 @@ entities I've seen, but the command does work.
 
 </blockquote>
 
-<h3>Only Used in Item Scripts</h3>
+<h2>Only Used in Item Scripts</h2>
 
 <blockquote>
 
@@ -783,7 +784,7 @@ Used on potions to turn the potion into an empty flask
 </dl>
 </blockquote>
 
-<h3>Only Used in Tiles/Squares</h3>
+<h2>Only Used in Tiles/Squares</h2>
 
 <blockquote>
 
@@ -806,4 +807,4 @@ a toggle switch.)
 </dl>
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

@@ -1,10 +1,11 @@
 <? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
 <?
 require_once('common.php');
-esch_header();
+$page->set_title('Download');
+$page->apoc_header();
 ?>
 
-<h3>Download</h3>
+<h2>Download</h2>
 
 <blockquote>
 
@@ -18,4 +19,4 @@ esch_header();
 <?php esch_show_previous_releases(); ?>
 </blockquote>
 
-<? esch_footer(); ?>
+<? $page->apoc_footer(); ?>

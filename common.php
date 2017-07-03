@@ -1,143 +1,23 @@
-<? // vim: set expandtab tabstop=4 shiftwidth=4: ?>
-<?
+<?php // vim: set expandtab tabstop=4 shiftwidth=4:
 
-$links = array(
-    array('index.php', 'Main'),
-    array('download.php', 'Download'),
-    array('installation.php', 'Installation'),
-    array('usage.php', 'Usage'),
-    array('map.php', 'Map/Script Information'),
-    array('screenshots.php', 'Screenshots (character)'),
-    array('screenshots_map.php', 'Screenshots (maps)')
-);
-
-$sublinks = array(
-    'map.php' => array(
-        array('b1scripting.php', 'Book 1 Scripting'),
-        array('b2scripting.php', 'Book 2 Scripting'),
-        array('b3scripting.php', 'Book 3 Scripting')
-    )
-);
-
-// Construct a somewhat-reversed array so we know if we're a subpage of something
-$revsublinks = array();
-foreach ($sublinks as $mainlink => $sublinkitems)
-{
-    foreach ($sublinkitems as $sublinkitem)
-    {
-        $revsublinks[$sublinkitem[0]] = $mainlink;
-    }
-}
-
-function pagelinks(&$drawingsubs)
-{
-    global $links;
-    global $sublinks;
-    global $revsublinks;
-    $drawingsubs = false;
-    $dirs = explode('/', $_SERVER['SCRIPT_NAME']);
-    $curfile = $dirs[count($dirs)-1];
-    $linkarr = array();
-    foreach ($links as $link)
-    {
-        $file = $link[0];
-        $title = $link[1];
-
-        $subhtml = array();
-        $subhtml[] = '<span style="position: relative">';
-        if ($curfile == $file)
-        {
-            $subhtml[] = $title;
-        }
-        else
-        {
-            $subhtml[] = '<a href="' . $file . '">' . $title . '</a>';
-        }
-
-        // TOOD: Should we just show the subcategories all the time?
-        $linkref = '';
-        if ($curfile == $file and array_key_exists($curfile, $sublinks))
-        {
-            $linkref = $curfile;
-        }
-        elseif (array_key_exists($curfile, $revsublinks) and ($revsublinks[$curfile] == $file))
-        {
-            $linkref = $file;
-        }
-
-        if ($linkref != '')
-        {
-            $drawingsubs = true;
-            $subhtml[] = '<span class="sublinks">';
-            foreach ($sublinks[$linkref] as $sublink)
-            {
-                if ($curfile == $sublink[0])
-                {
-                    $subhtml[] = $sublink[1] . '<br>';
-                }
-                else
-                {
-                    $subhtml[] = '<a href="' . $sublink[0] . '">' . $sublink[1] . '</a><br>';
-                }
-            }
-            $subhtml[] = '</span>';
-        }
-
-        $subhtml[] = '</span>';
-
-        $linkarr[] = implode("\n", $subhtml);
-    }
-    return implode(" |\n", $linkarr);
-}
-
-function esch_header($title='', $extrahead='', $extrabody='')
-{
-    $drawingsubs = false;
-    $shorttitle = 'Eschalon Savefile Editor';
-    $fulltitle = $shorttitle;
-    if ($title != '')
-    {
-        $fulltitle .= ' - ' . $title;
-    }
-	?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
- <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<title><?=$fulltitle?></title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css">
-<?=$extrahead?>
-</head>
-<body>
-<table border="0" cellpadding=".3em">
-<tr>
-<td><img src="dist/eschalon_utils-current/data/eb1_icon_64.png" alt=""></td>
-<td>
-<h2><?=$shorttitle?></h2>
-<span class="linkblock"><?= pagelinks($drawingsubs) ?></span>
-</td>
-</tr>
-</table>
-    <?
-    if ($drawingsubs)
-    {
-        print '<p class="spacer">&nbsp;</p>';
-    }
-    else
-    {
-        print '<p></p>';
-    }
-    if ($title != '')
-    {
-        print '<h2>' . $title . '</h2>';
-    }
-}
-
-function esch_footer()
-{
-	print '</body></html>';
-}
+require_once('../inc/apoc.php');
+$page->set_base_title('Eschalon Savefile Editor');
+$page->use_base_title_in_page_only = true;
+$page->set_app_menu(new MenuItem('/eschalon/', 'Root', array(
+    new MenuItem(NULL, 'Main'),
+    new MenuItem('download.php', 'Download'),
+    new MenuItem('installation.php', 'Installation'),
+    new MenuItem('usage.php', 'Usage'),
+    new MenuItem('map.php', 'Map/Script Information', array(
+        new MenuItem('b1scripting.php', 'Book 1 Scripting'),
+        new MenuItem('b2scripting.php', 'Book 2 Scripting'),
+        new MenuItem('b3scripting.php', 'Book 3 Scripting'),
+    )),
+    new MenuItem('screenshots.php', 'Screenshots (character)'),
+    new MenuItem('screenshots_map.php', 'Screenshots (maps)')
+)));
+$page->add_css('style.css');
+$page->set_header_icon('dist/eschalon_utils-current/data/eb1_icon_64.png');
 
 function print_sums($sums)
 {
@@ -189,12 +69,11 @@ function esch_rel_2014($ver, $date,
     if ($current)
     {
         ?>
-        <p><span class="smalltext"><i>(Releases signed by
-        <a href="http://pgp.mit.edu/pks/lookup?op=vindex&search=0x7737E0EBB4ABC956">B4ABC956</a>)</p>
-        <span class="smalltext">
-        <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
+        <span class="smalltext"><p><i>(Releases signed by
+        <a href="http://pgp.mit.edu/pks/lookup?op=vindex&search=0x7737E0EBB4ABC956">B4ABC956</a>)</i></p>
+        <p><strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
         work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
-        The Windows EXE is unaffected, as are the character editors, and Book 1 map editing.
+        The Windows EXE is unaffected, as are the character editors, and Book 1 map editing.</p>
         </span>
         <?
     }
@@ -306,4 +185,3 @@ function esch_show_previous_releases()
     <?php
 }
 
-?>
