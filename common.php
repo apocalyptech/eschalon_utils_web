@@ -47,32 +47,32 @@ function esch_rel_2014($ver, $date,
     printf("<blockquote>\n");
     if (!is_null($exe_sums))
     {
-        printf("Windows EXE: <a href=\"dist/eschalon_utils_%s_setup.exe\">eschalon_utils_%s_setup.exe</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils_%s_setup.exe.asc\">sig</a>)<br>", $exe_ver, $exe_ver, $exe_ver);
+        printf("Windows EXE: <a href=\"dist/eschalon_utils_%s_setup.exe\">eschalon_utils_%s_setup.exe</a> (<a href=\"https://apocalyptech.com/eschalon/dist/eschalon_utils_%s_setup.exe.asc\">sig</a>)<br>", $exe_ver, $exe_ver, $exe_ver);
         if ($current) { print_sums($exe_sums); }
     }
     if (!is_null($tgz_sums))
     {
-        printf("Linux/Source (tgz): <a href=\"dist/eschalon_utils-%s.tar.gz\">eschalon_utils-%s.tar.gz</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.tar.gz.asc\">sig</a>)<br>", $ver, $ver, $ver);
+        printf("Linux/Source (tgz): <a href=\"dist/eschalon_utils-%s.tar.gz\">eschalon_utils-%s.tar.gz</a> (<a href=\"https://apocalyptech.com/eschalon/dist/eschalon_utils-%s.tar.gz.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($tgz_sums); }
     }
     if (!is_null($dmg_sums))
     {
-        printf("OSX (dmg): <a href=\"dist/Eschalon%%20Utils%%20%s.dmg\">Eschalon Utils %s.dmg</a> (<a href=\"http://apocalyptech.com/eschalon/dist/Eschalon%%20Utils%%20%s.dmg.asc\">sig</a>)<br>", $ver, $ver, $ver);
+        printf("OSX (dmg): <a href=\"dist/Eschalon%%20Utils%%20%s.dmg\">Eschalon Utils %s.dmg</a> (<a href=\"https://apocalyptech.com/eschalon/dist/Eschalon%%20Utils%%20%s.dmg.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($dmg_sums); }
     }
     if (!is_null($zip_sums))
     {
-        printf("Other (zipfile): <a href=\"dist/eschalon_utils-%s.zip\">eschalon_utils-%s.zip</a> (<a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s.zip.asc\">sig</a>)<br>", $ver, $ver, $ver);
+        printf("Other (zipfile): <a href=\"dist/eschalon_utils-%s.zip\">eschalon_utils-%s.zip</a> (<a href=\"https://apocalyptech.com/eschalon/dist/eschalon_utils-%s.zip.asc\">sig</a>)<br>", $ver, $ver, $ver);
         if ($current) { print_sums($zip_sums); }
     }
-    printf("Signed sha256 checksums: <a href=\"http://apocalyptech.com/eschalon/dist/eschalon_utils-%s-sha256sum.txt.asc\">eschalon_utils-%s-sha256sum.txt.asc</a><br>", $ver, $ver, $ver, $ver);
+    printf("Signed sha256 checksums: <a href=\"https://apocalyptech.com/eschalon/dist/eschalon_utils-%s-sha256sum.txt.asc\">eschalon_utils-%s-sha256sum.txt.asc</a><br>", $ver, $ver, $ver, $ver);
     if ($current)
     {
         ?>
         <span class="smalltext"><p><i>(Releases signed by
         <a href="http://pgp.mit.edu/pks/lookup?op=vindex&search=0x7737E0EBB4ABC956">B4ABC956</a>)</i></p>
         <p><strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
-        work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
+        work, see the <a href="https://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
         The Windows EXE is unaffected, as are the character editors, and Book 1 map editing.</p>
         </span>
         <?
@@ -106,7 +106,7 @@ function esch_rel($ver, $date, $warning=false, $b1_only=false)
         ?>
         <span class="smalltext">
         <strong>Note:</strong> The tgz and zip versions of the Book 2 Map Editor requires a couple extra packages to
-        work, see the <a href="http://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
+        work, see the <a href="https://apocalyptech.com/eschalon/installation.php">Installation</a> page for more info.
         The Windows EXE is unaffected, as are the character editors, and Book 1 map editing.
         </span>
         <?
